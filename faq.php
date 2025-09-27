@@ -1,4 +1,4 @@
-<?php 
+<?php
 $version = file_exists('version.txt') ? trim(file_get_contents('version.txt')) : time();
 
 // Configuración específica de la página
@@ -6,6 +6,42 @@ $page_title = 'Preguntas frecuentes: cubanos en República Dominicana';
 $page_description = 'Respuestas a las preguntas más comunes sobre migración, derechos y procesos para cubanos en República Dominicana.';
 
 include 'includes/head.php';
+
+// Definir preguntas y respuestas para el schema FAQPage
+$faqQuestions = [
+    [
+        'question' => '¿Qué es Patriotas del Caribe?',
+        'answer' => 'Es una iniciativa sin fines de lucro en proceso de registro legal en República Dominicana bajo la Ley No. 122-05. Su propósito es defender la libertad, la dignidad humana y proveer asistencia jurídica y humanitaria a migrantes cubanos en situación de vulnerabilidad.'
+    ],
+    [
+        'question' => '¿Cómo puedo regularizar mi situación migratoria en República Dominicana?',
+        'answer' => 'El registro en Patriotas del Caribe no sustituye procesos ante Migración ni tiene efectos legales automáticos. Es una herramienta de incidencia social y técnica de la sociedad civil. Para regularización, debes consultar directamente con la Dirección General de Migración de República Dominicana.'
+    ],
+    [
+        'question' => '¿Qué documentos necesito para el registro en Patriotas del Caribe?',
+        'answer' => 'Solo necesitas datos básicos de identificación: nombre completo, correo electrónico, edad, fecha y vía de entrada a RD, escolaridad, profesión, ocupación y situación familiar. No se recogen datos sensibles y se cumple la Ley 172-13 sobre Protección de Datos.'
+    ],
+    [
+        'question' => '¿Cuáles son los derechos de los migrantes cubanos en República Dominicana?',
+        'answer' => 'Los migrantes cubanos en RD tienen derechos humanos fundamentales reconocidos por la Constitución dominicana y tratados internacionales. Patriotas del Caribe trabaja para defender estos derechos y promover la regularización humanitaria a través del Plan de Regularización Humanitaria para Exiliados Cubanos (PRHEC).'
+    ],
+    [
+        'question' => '¿Dónde puedo encontrar apoyo legal para migrantes cubanos en República Dominicana?',
+        'answer' => 'Puedes contactar a Patriotas del Caribe a través de contacto@patriotasdelcaribe.com o unirte a nuestros grupos sociales en Facebook y WhatsApp. También puedes consultar con organizaciones de derechos humanos y la Defensoría del Pueblo de República Dominicana.'
+    ],
+    [
+        'question' => '¿Cómo funciona el proceso de confirmación por email?',
+        'answer' => 'Después de completar el formulario de registro, recibirás un email de confirmación con un enlace único. Debes hacer clic en ese enlace para confirmar tu inscripción. Si no ves el mensaje, revisa tu carpeta de spam o promociones.'
+    ]
+];
+
+// Generar schema FAQPage
+$faqSchema = generateFAQSchema($faqQuestions);
+
+// Agregar schema FAQPage a los schemas básicos
+echo '<script type="application/ld+json">' . "\n";
+echo json_encode($faqSchema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+echo "\n" . '</script>' . "\n";
 ?>
 <body>
     

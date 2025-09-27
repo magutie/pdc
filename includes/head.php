@@ -44,6 +44,15 @@ $og_image = $site_config['site_url'] . '/images/preview.jpg';
     <meta name="twitter:description" content="<?php echo htmlspecialchars($page_description); ?>">
     <meta name="twitter:image" content="<?php echo htmlspecialchars($og_image); ?>">
 
+    <!-- DATOS ESTRUCTURADOS JSON-LD -->
+    <?php 
+    require_once 'schemas.php';
+    
+    // Schemas básicos para todas las páginas
+    $basicSchemas = [$organizationSchema, $websiteSchema, $navigationSchema];
+    printSchemas($basicSchemas);
+    ?>
+
     <!-- VERIFICACIÓN GOOGLE -->
     <meta name="google-site-verification" content="<?php echo $site_config['google_site_verification']; ?>" />
 
