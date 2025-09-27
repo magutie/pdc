@@ -51,7 +51,7 @@ include 'includes/head.php';
     <div class="heroe">
         <h3>Juan Pablo Duarte</h3>
         <p class="cita">"Vivir sin patria es lo mismo que vivir sin honor."</p>
-        <img src="images/duarte.jpg" alt="Juan Pablo Duarte, padre fundador de República Dominicana y símbolo de libertad caribeña" class="heroe-img">
+        <img src="images/duarte.jpg" alt="Juan Pablo Duarte, padre fundador de República Dominicana y símbolo de libertad caribeña" class="heroe-img" loading="lazy">
         <p>
             Padre Fundador de la República Dominicana, Duarte soñaba con una América libre del dominio extranjero y unida por los principios de libertad y autodeterminación. Su ejemplo inspiró a muchos otros movimientos independentistas del Caribe, incluyendo a los cubanos que lucharon por sacudirse el yugo colonial. Martí lo estudió con devoción y lo consideró uno de los grandes padres de la libertad en América Latina.
         </p>
@@ -61,7 +61,7 @@ include 'includes/head.php';
     <div class="heroe">
         <h3>Máximo Gómez</h3>
         <p class="cita">"No lucho por conquistas personales, sino por la libertad de los pueblos."</p>
-        <img src="images/gomez.jpg" alt="Máximo Gómez, estratega militar dominicano que luchó por la independencia de Cuba" class="heroe-img">
+        <img src="images/gomez.jpg" alt="Máximo Gómez, estratega militar dominicano que luchó por la independencia de Cuba" class="heroe-img" loading="lazy">
         <p>
             Nacido en Baní, República Dominicana, Máximo Gómez fue un estratega militar clave en las guerras por la independencia de Cuba. Aunque dominicano de nacimiento, entregó su vida a la causa cubana y se convirtió en uno de sus héroes más reverenciados. Su valentía en el campo de batalla y su compromiso con la libertad caribeña lo convierten en el símbolo más poderoso de la unión histórica entre ambas naciones.
         </p>
@@ -70,7 +70,7 @@ include 'includes/head.php';
     <div class="heroe">
         <h3>José Martí</h3>
         <p class="cita">"La patria es ara, no pedestal."</p>
-        <img src="images/marti.jpg" alt="José Martí, poeta y revolucionario cubano, defensor de la libertad de Cuba y la unidad caribeña" class="heroe-img">
+        <img src="images/marti.jpg" alt="José Martí, poeta y revolucionario cubano, defensor de la libertad de Cuba y la unidad caribeña" class="heroe-img" loading="lazy">
         <p>
             Poeta, filósofo y revolucionario cubano, José Martí es el alma de la independencia de Cuba. Su admiración por Juan Pablo Duarte y su estadía en Santo Domingo dejaron huellas profundas en su pensamiento. Martí veía a República Dominicana como un modelo de lucha patriótica, y a través de sus escritos y alianzas forjó puentes entre ambas islas en defensa de la soberanía, la dignidad y los valores republicanos.
         </p>

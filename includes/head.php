@@ -56,14 +56,26 @@ $og_image = $site_config['site_url'] . '/images/preview.jpg';
     })(window,document,'script','dataLayer','<?php echo $site_config['gtm_id']; ?>');
     </script>
 
-    <!-- PERFORMANCE: CSS Y FUENTES -->
+    <!-- PERFORMANCE: CSS Y FUENTES OPTIMIZADAS -->
+    <!-- Critical CSS inline -->
+    <style>
+        <?php include 'css/critical.css'; ?>
+    </style>
+    
+    <!-- Preload main stylesheet -->
     <link rel="preload" href="style-patriotas.css?v=<?php echo $version; ?>" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="style-patriotas.css?v=<?php echo $version; ?>"></noscript>
 
+    <!-- Font optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"></noscript>
+    
+    <!-- Resource hints for performance -->
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
