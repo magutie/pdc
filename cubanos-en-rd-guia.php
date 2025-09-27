@@ -342,23 +342,22 @@ echo "\n" . '</script>' . "\n";
         </section>
 
         <!-- CTA Section -->
-        <section id="cta-section" style="background-color: #e3f2fd; padding: 3rem; border-radius: 12px; text-align: center; margin: 3rem 0;">
-            <h2>🤝 ¿Necesitas Ayuda Personalizada?</h2>
-            <p style="font-size: 1.2rem; margin: 1rem 0;">Patriotas del Caribe está aquí para apoyarte en tu proceso de integración en República Dominicana.</p>
-            
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
-                <a href="index.php#formulario" class="btn-primary" style="background-color: #1976d2; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 6px; font-weight: bold;">
-                    📝 Registrarse para Recibir Ayuda
-                </a>
-                <a href="https://chat.whatsapp.com/DimB9T4dukkCvSVBVq1iuV" class="btn-secondary" style="background-color: #25D366; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 6px; font-weight: bold;" target="_blank">
-                    💬 Únete a Nuestro WhatsApp
-                </a>
-            </div>
-            
-            <p style="font-size: 0.9rem; color: #666;">
-                <strong>Gratuito y confidencial</strong> | Respuesta en 24-48 horas
-            </p>
-        </section>
+        <?php 
+        require_once 'includes/cta-templates.php';
+        includeCTA('main', 
+            '🤝 ¿Necesitas Ayuda Personalizada?',
+            'Patriotas del Caribe está aquí para apoyarte en tu proceso de integración en República Dominicana.',
+            [
+                'custom_buttons' => [
+                    [
+                        'text' => '📖 Ver Plan de Trabajo',
+                        'url' => 'plan_trabajo.php',
+                        'color' => '#d32f2f'
+                    ]
+                ]
+            ]
+        );
+        ?>
     </article>
 </main>
 

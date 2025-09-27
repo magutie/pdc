@@ -231,23 +231,10 @@ echo "\n" . '</script>' . "\n";
         </section>
 
         <!-- CTA Section -->
-        <section id="cta-section" style="background-color: #e3f2fd; padding: 3rem; border-radius: 12px; text-align: center; margin: 3rem 0;">
-            <h2>🤝 ¿Necesitas Ayuda con tu Regularización?</h2>
-            <p style="font-size: 1.2rem; margin: 1rem 0;">Patriotas del Caribe puede orientarte en el proceso de regularización migratoria.</p>
-            
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
-                <a href="index.php#formulario" class="btn-primary" style="background-color: #1976d2; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 6px; font-weight: bold;">
-                    📝 Solicitar Orientación
-                </a>
-                <a href="faq.php" class="btn-secondary" style="background-color: #6c757d; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 6px; font-weight: bold;">
-                    ❓ Ver Preguntas Frecuentes
-                </a>
-            </div>
-            
-            <p style="font-size: 0.9rem; color: #666;">
-                <strong>Asesoría gratuita</strong> | Respuesta en 24-48 horas
-            </p>
-        </section>
+        <?php 
+        require_once 'includes/cta-templates.php';
+        echo getRegularizationCTA();
+        ?>
 
         <!-- Enlaces relacionados -->
         <section style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
