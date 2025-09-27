@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /vendor/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /*?*
+Disallow: /confirmar.php?*
+Disallow: /procesar.php
+
+# Sitemap
+Sitemap: https://www.patriotasdelcaribe.com/sitemap.xml
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 1

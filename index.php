@@ -1,133 +1,21 @@
-<?php $version = file_exists('version.txt') ? trim(file_get_contents('version.txt')) : time(); ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <!-- FUNDAMENTOS SEO -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php 
+$version = file_exists('version.txt') ? trim(file_get_contents('version.txt')) : time();
 
-  <!-- TÍTULO Y DESCRIPCIÓN SEO -->
-  <title>Migración Cubana en República Dominicana | Residencia, Derechos y Regularización Legal</title>
-  <meta name="description" content="Fundación Patriotas del Caribe: Información sobre residencia legal, deportaciones, regularización migratoria y derechos de cubanos en República Dominicana.">
-  <meta name="keywords" content="migración cubana, residencia legal cubanos RD, deportaciones cubanos, derechos migrantes, regularización RD, visas, viajes Cuba RD, fundación Patriotas del Caribe, activismo caribeño, libertad Cuba">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Fundación Patriotas del Caribe">
-  <link rel="canonical" href="https://www.patriotasdelcaribe.com/">
-  <link rel="icon" href="images/favicon.png" type="image/png" />
+// Configuración específica de la página
+$page_title = 'Patriotas del Caribe: apoyo a cubanos en República Dominicana';
+$page_description = 'Orientación en migración, derechos y comunidad para cubanos en RD. Regístrate gratis y recibe apoyo confiable de Patriotas del Caribe.';
 
-  <!-- META AVANZADA -->
-  <meta name="theme-color" content="#003366">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="language" content="es">
-  <meta name="rating" content="general">
-  <meta name="audience" content="all">
-  <meta name="coverage" content="Global">
-
-  <!-- SOCIAL MEDIA OG -->
-  <meta property="og:title" content="Migración Cubana en República Dominicana | Patriotas del Caribe">
-  <meta property="og:description" content="Defensa de migrantes cubanos en RD. Ayuda legal, activismo cívico y orientación sobre residencia, deportaciones y derechos humanos.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.patriotasdelcaribe.com/">
-  <meta property="og:image" content="https://www.patriotasdelcaribe.com/images/preview.jpg">
-
-  <!-- TWITTER CARDS -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Migración en RD: Derechos y Residencia para Cubanos | Patriotas del Caribe">
-  <meta name="twitter:description" content="Guía legal y humanitaria para migrantes cubanos en República Dominicana.">
-  <meta name="twitter:image" content="https://www.patriotasdelcaribe.com/images/preview.jpg">
-
-  <!-- JSON-LD: DATOS ESTRUCTURADOS SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "NGO",
-    "name": "Fundación Patriotas del Caribe",
-    "url": "https://www.patriotasdelcaribe.com",
-    "logo": "https://www.patriotasdelcaribe.com/images/logo.png",
-    "description": "ONG binacional que apoya a migrantes cubanos en República Dominicana mediante asesoría legal, educación cívica y activismo humanitario.",
-    "sameAs": [
-      "https://www.facebook.com/patriotasdelcaribe",
-      "https://twitter.com/patriotascaribe",
-      "https://www.instagram.com/patriotasdelcaribe"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "DO"
-    }
-  }
-  </script>
-
-  <!-- VERIFICACIÓN GOOGLE -->
-  <meta name="google-site-verification" content="r5ZpRdEiBC__okZhv4_Gl3i_D-P7K_bZrcBgRDBSdIg" />
-
-  <!-- GOOGLE TAG MANAGER -->
-  <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NBVVS6PG');
-  </script>
-
-  <!-- PERFORMANCE: CSS Y FUENTES -->
-  <link rel="preload" href="style-patriotas.css?v=<?php echo $version; ?>" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="style-patriotas.css?v=<?php echo $version; ?>"></noscript>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap"></noscript>
-
-  <!-- FAVICONS -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="shortcut icon" href="images/favicon.ico?v=<?php echo $version; ?>">
-
-  <!-- ESTILOS REDES -->
-  <style>
-  .botones-compartir {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 1rem;
-  }
-
-  .botones-compartir .btn {
-    padding: 10px 20px;
-    border-radius: 6px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 0.3s;
-    border: none;
-  }
-
-  .red-whatsapp { background-color: #25D366; }
-  .red-facebook { background-color: #1877F2; }
-  .red-twitter  { background-color: black; }
-  .red-enlace   { background-color: #6c757d; }
-
-  .btn:hover {
-    opacity: 0.9;
-  }
-  </style>
-</head>
+include 'includes/head.php';
+?>
 
 
 <body>
     
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBVVS6PG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <header>
     <div class="header-container">
         <div class="logo-eslogan">
-            <h1 class="logo-text">Patriotas del Caribe</h1>
+            <h1>Patriotas del Caribe: apoyo a cubanos en República Dominicana</h1>
             <p class="eslogan">Después de Dios, la Patria y su Libertad</p>
         </div>
         <div class="logo-container">
@@ -327,5 +215,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>&copy; 2025 Patriotas del Caribe. Todos los derechos reservados.</p>
 </footer>
 
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
