@@ -1,12 +1,12 @@
-<?php
+<?php 
 $version = file_exists('version.txt') ? trim(file_get_contents('version.txt')) : time();
-?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Plan de Trabajo - Patriotas del Caribe</title>
+// Configuración específica de la página
+$page_title = 'Plan de trabajo: regularización y apoyo a migrantes cubanos';
+$page_description = 'Conoce nuestro plan integral para la regularización humanitaria y apoyo a migrantes cubanos en República Dominicana.';
+
+include 'includes/head.php';
+?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-patriotas.css?v=<?php echo $version; ?>">
     <link rel="icon" href="images/favicon.png" type="image/png">
