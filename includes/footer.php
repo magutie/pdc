@@ -64,5 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<!-- Service Worker para mejor performance -->
+<?php 
+require_once 'performance-optimizer.php';
+echo generateServiceWorker();
+?>
+
 </body>
 </html>

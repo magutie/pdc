@@ -66,14 +66,12 @@ $og_image = $site_config['site_url'] . '/images/preview.jpg';
     </script>
 
     <!-- PERFORMANCE: CSS Y FUENTES OPTIMIZADAS -->
-    <!-- Critical CSS inline -->
-    <style>
-        <?php include 'css/critical.css'; ?>
-    </style>
-    
-    <!-- Preload main stylesheet -->
-    <link rel="preload" href="style-patriotas.css?v=<?php echo $version; ?>" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style-patriotas.css?v=<?php echo $version; ?>"></noscript>
+    <?php 
+    require_once 'performance-optimizer.php';
+    echo getCriticalCSS();
+    echo loadNonCriticalCSS('style-patriotas.css', $version);
+    echo preloadCriticalResources();
+    ?>
 
     <!-- Font optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,8 +116,14 @@ $og_image = $site_config['site_url'] . '/images/preview.jpg';
     .red-twitter  { background-color: black; }
     .red-enlace   { background-color: #6c757d; }
 
-    .btn:hover {
+      .btn:hover {
         opacity: 0.9;
-    }
-    </style>
-</head>
+      }
+      </style>
+      
+      <!-- JavaScript optimizado para Core Web Vitals -->
+      <?php 
+      echo getOptimizedJavaScript();
+      echo optimizeCoreWebVitals();
+      ?>
+    </head>
