@@ -12,7 +12,21 @@
     <priority>1.0</priority>
 </url>
 
-<!-- Páginas principales -->
+<!-- Hub principal y páginas principales -->
+<url>
+    <loc>https://www.patriotasdelcaribe.com/cubanos-en-rd-guia.php</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+</url>
+
+<url>
+    <loc>https://www.patriotasdelcaribe.com/regularizacion-rd.php</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+</url>
+
 <url>
     <loc>https://www.patriotasdelcaribe.com/plan_trabajo.php</loc>
     <lastmod>2025-01-27</lastmod>

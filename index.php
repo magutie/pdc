@@ -84,9 +84,12 @@ include 'includes/head.php';
 
 
 <section class="llamado-plan">
-    <h2>Conoce Nuestro Plan de Acción</h2>
-    <p>Antes de registrarte, te invitamos a leer nuestro plan completo de regularización humanitaria para cubanos exiliados.</p>
-    <a href="plan_trabajo.php" class="boton-rojo">Leer el Plan de Trabajo</a>
+    <h2>📚 Guía Completa para Cubanos en República Dominicana</h2>
+    <p>Todo lo que necesitas saber sobre regularización, derechos, trabajo, salud, educación y comunidades de apoyo en República Dominicana.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 1rem 0;">
+        <a href="cubanos-en-rd-guia.php" class="boton-rojo" style="background-color: #1976d2; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 6px; font-weight: bold;">📖 Ver Guía Completa</a>
+        <a href="plan_trabajo.php" class="boton-rojo" style="background-color: #d32f2f; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 6px; font-weight: bold;">📋 Plan de Trabajo</a>
+    </div>
 </section>
 
 <section id="formulario">
