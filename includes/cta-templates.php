@@ -86,6 +86,29 @@ function generateArticleCTA($title, $description, $options) {
     return $cta;
 }
 
+function generateTestimoniosCTA() {
+    $cta = '<section class="cta-testimonios" style="background: linear-gradient(135deg, #003366, #004d99); color: white; padding: 2rem; border-radius: 8px; text-align: center; margin: 2rem 0;">';
+    $cta .= '<h3 style="color: white; margin-bottom: 1rem;">Regístrate para recibir apoyo personalizado</h3>';
+    $cta .= '<p style="margin-bottom: 1.5rem;">Únete a nuestra comunidad y recibe orientación directa para tu situación migratoria</p>';
+
+    $cta .= '<div class="cta-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">';
+
+    $cta .= '<a href="/#formulario" class="btn-primary" style="background: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s;" onclick="gtag(\'event\', \'click\', {\'event_category\': \'CTA\', \'event_label\': \'Registro_Testimonios\'});">';
+    $cta .= '📝 Registrarme Ahora</a>';
+
+    $cta .= '<a href="https://chat.whatsapp.com/DimB9T4dukkCvSVBVq1iuV" target="_blank" class="btn-secondary" style="background: #25D366; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold;" onclick="gtag(\'event\', \'click\', {\'event_category\': \'CTA\', \'event_label\': \'WhatsApp_Testimonios\'});">';
+    $cta .= '💬 Contactar por WhatsApp</a>';
+
+    $cta .= '<a href="/faq.php" class="btn-tertiary" style="background: transparent; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; border: 2px solid white; font-weight: bold;" onclick="gtag(\'event\', \'click\', {\'event_category\': \'CTA\', \'event_label\': \'FAQ_Testimonios\'});">';
+    $cta .= '❓ Ver Preguntas Frecuentes</a>';
+
+    $cta .= '</div>';
+    $cta .= '<p style="font-size: 0.9rem; color: #ccc; margin-top: 1rem;">Todos nuestros servicios son gratuitos y confidenciales</p>';
+    $cta .= '</section>';
+
+    return $cta;
+}
+
 function generateSupportCTA($title, $description, $options) {
     $title = $title ?: '🆘 ¿Necesitas Apoyo Inmediato?';
     $description = $description ?: 'Si estás pasando por una situación difícil o necesitas orientación urgente, contáctanos directamente.';

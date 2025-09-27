@@ -31,7 +31,7 @@ echo "\n" . '</script>' . "\n";
       <p class="eslogan">Después de Dios, la Patria y su Libertad</p>
     </div>
     <div class="logo-container">
-      <img src="images/logo.png" alt="Logo Patriotas" class="logo" />
+      <img src="images/logo.png" alt="Logo Patriotas del Caribe - Fundación de apoyo a migrantes cubanos en República Dominicana" class="logo" loading="eager" />
     </div>
   </div>
 </header>
@@ -50,7 +50,7 @@ echo "\n" . '</script>' . "\n";
     <div class="heroe">
       <h3>Juan Pablo Duarte (1813–1876)</h3>
       <p class="cita">"Vivir sin patria es lo mismo que vivir sin honor."</p>
-      <img src="images/duarte.jpg" alt="Juan Pablo Duarte" class="heroe-img" />
+      <img src="images/duarte.jpg" alt="Juan Pablo Duarte, padre fundador de República Dominicana y símbolo de libertad caribeña" class="heroe-img" loading="lazy" />
       <p>
         Fundador de la República Dominicana y líder del movimiento independentista contra el dominio haitiano. Duarte soñaba no solo con una patria libre, sino también con una América Latina unida, independiente del dominio europeo o estadounidense. Sus ideales de soberanía nacional y justicia social inspiraron a líderes cubanos como José Martí, quien valoró la figura de Duarte como ejemplo de patriotismo desinteresado y heroico.
       </p>
@@ -59,7 +59,7 @@ echo "\n" . '</script>' . "\n";
     <div class="heroe">
       <h3>José Martí (1853–1895)</h3>
       <p class="cita">"La patria es ara, no pedestal."</p>
-      <img src="images/marti.jpg" alt="José Martí" class="heroe-img" />
+      <img src="images/marti.jpg" alt="José Martí, poeta y revolucionario cubano, defensor de la libertad de Cuba y la unidad caribeña" class="heroe-img" loading="lazy" />
       <p>
         El Apóstol de la independencia cubana encontró en Santo Domingo un refugio y un punto de apoyo para su causa. Durante su estancia en la isla, Martí estudió el legado de Duarte y se sensibilizó profundamente con el ideario dominicano. Para Martí, la libertad de Cuba estaba conectada con la libertad de toda América Latina. Su visita a la República Dominicana reforzó su visión de una gran patria americana, sin imperios ni tutelajes externos.
       </p>
@@ -68,7 +68,7 @@ echo "\n" . '</script>' . "\n";
     <div class="heroe">
       <h3>Máximo Gómez (1836–1905)</h3>
       <p class="cita">"No lucho por conquistas personales, sino por la libertad de los pueblos."</p>
-      <img src="images/gomez.jpg" alt="Máximo Gómez" class="heroe-img" />
+      <img src="images/gomez.jpg" alt="Máximo Gómez, estratega militar dominicano que luchó por la independencia de Cuba" class="heroe-img" loading="lazy" />
       <p>
         Generalísimo de las fuerzas independentistas cubanas, nacido en Baní, República Dominicana. Gómez se convirtió en uno de los grandes estrategas de la Guerra de los Diez Años y la Guerra de Independencia de Cuba. Su entrega a la causa cubana fue total, renunciando incluso a cargos políticos tras la independencia. Para los cubanos, es un héroe nacional; para los dominicanos, un símbolo del internacionalismo solidario.
       </p>
@@ -76,7 +76,7 @@ echo "\n" . '</script>' . "\n";
 
     <div class="heroe">
       <h3>Francisco Henríquez y Carvajal (1859–1935)</h3>
-      <img src="images/francisco.jpg" alt="Francisco Henríquez" class="heroe-img" />
+      <img src="images/francisco.jpg" alt="Francisco Henríquez y Carvajal, intelectual dominicano y defensor de la soberanía caribeña" class="heroe-img" loading="lazy" />
       <p>
         Intelectual y político dominicano que desde la diplomacia apoyó las causas independentistas del Caribe, incluyendo la cubana. Defendió con firmeza el derecho de los pueblos del continente a su autodeterminación.
       </p>
@@ -84,7 +84,7 @@ echo "\n" . '</script>' . "\n";
 
     <div class="heroe">
       <h3>Ramón Emeterio Betances (1827–1898)</h3>
-      <img src="images/betances.jpg" alt="Ramón Emeterio Betances" class="heroe-img" />
+      <img src="images/betances.jpg" alt="Ramón Emeterio Betances, médico y patriota puertorriqueño precursor de la independencia antillana" class="heroe-img" loading="lazy" />
       <p>
         Patriota puertorriqueño con fuertes vínculos con líderes dominicanos y cubanos. Participó en conspiraciones por la libertad del Caribe y promovió la Confederación Antillana: una unión regional basada en justicia, fraternidad y resistencia al colonialismo.
       </p>
@@ -92,7 +92,7 @@ echo "\n" . '</script>' . "\n";
 
     <div class="heroe">
       <h3>Gregorio Luperón (1839–1897)</h3>
-      <img src="images/luperon.jpg" alt="Gregorio Luperón" class="heroe-img" />
+      <img src="images/luperon.jpg" alt="Gregorio Luperón, general dominicano y líder de la restauración de la independencia" class="heroe-img" loading="lazy" />
       <p>
         Líder dominicano de la Restauración. Su ideología liberal, republicana y antiimperialista influyó en los movimientos anticoloniales del Caribe, incluyendo la lucha por la independencia de Cuba.
       </p>
@@ -100,7 +100,7 @@ echo "\n" . '</script>' . "\n";
 
     <div class="heroe">
       <h3>Narciso López (1797–1851)</h3>
-      <img src="images/narciso.jpg" alt="Narciso López" class="heroe-img" />
+      <img src="images/narciso.jpg" alt="Narciso López, revolucionario cubano precursor de la independencia de Cuba" class="heroe-img" loading="lazy" />
       <p>
         Militar venezolano que, con apoyo de dominicanos y otros latinoamericanos, lideró expediciones desde EE.UU. para liberar a Cuba del dominio español. Aunque no tuvo éxito, representa el espíritu de solidaridad regional del siglo XIX.
       </p>
@@ -108,7 +108,7 @@ echo "\n" . '</script>' . "\n";
 
     <div class="heroe">
       <h3>Antonio Maceo (1845–1896)</h3>
-      <img src="images/maceo.jpg" alt="Antonio Maceo" class="heroe-img" />
+      <img src="images/maceo.jpg" alt="Antonio Maceo, el Titán de Bronce, héroe mulato de la independencia cubana" class="heroe-img" loading="lazy" />
       <p>
         Héroe cubano conocido como "El Titán de Bronce". Luchó por una Cuba libre y soberana, con una visión profundamente antirracista. Mantuvo lazos ideológicos con dominicanos y su legado trasciende fronteras.
       </p>
@@ -116,7 +116,7 @@ echo "\n" . '</script>' . "\n";
 
     <div class="heroe">
       <h3>Solidaridad del Siglo XX y XXI</h3>
-      <img src="images/logo.png" alt="Solidaridad RD-Cuba" class="heroe-img" />
+      <img src="images/logo.png" alt="Símbolo de la solidaridad entre República Dominicana y Cuba en la lucha por la libertad" class="heroe-img" loading="lazy" />
       <p>
         Durante el siglo XX, especialmente en la dictadura de Trujillo, Cuba ofreció refugio a exiliados dominicanos. A lo largo de los años, ha brindado apoyo médico y educativo a comunidades dominicanas. La hermandad entre los pueblos se ha mantenido viva pese a los cambios políticos.
       </p>

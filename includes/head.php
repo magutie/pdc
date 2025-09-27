@@ -65,6 +65,18 @@ $og_image = $site_config['site_url'] . '/images/preview.jpg';
     })(window,document,'script','dataLayer','<?php echo $site_config['gtm_id']; ?>');
     </script>
 
+    <!-- GOOGLE ANALYTICS 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $site_config['ga4_id']; ?>"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '<?php echo $site_config['ga4_id']; ?>', {
+        page_title: '<?php echo htmlspecialchars($page_title); ?>',
+        page_location: window.location.href
+    });
+    </script>
+
     <!-- PERFORMANCE: CSS Y FUENTES OPTIMIZADAS -->
     <?php 
     require_once 'performance-optimizer.php';
@@ -119,11 +131,79 @@ $og_image = $site_config['site_url'] . '/images/preview.jpg';
       .btn:hover {
         opacity: 0.9;
       }
+
+      /* LAZY LOADING STYLES */
+      .lazy-image {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .lazy-image.loaded {
+        opacity: 1;
+      }
+
+      img[loading="lazy"] {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      img[loading="lazy"].loaded,
+      img[loading="lazy"]:not([data-src]) {
+        opacity: 1;
+      }
+
+      /* Prevenir layout shift */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
       </style>
       
       <!-- JavaScript optimizado para Core Web Vitals -->
-      <?php 
+      <?php
       echo getOptimizedJavaScript();
       echo optimizeCoreWebVitals();
       ?>
+
+      <!-- Lazy Loading JavaScript -->
+      <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Verificar soporte para Intersection Observer
+          if ('IntersectionObserver' in window) {
+              // Intersection Observer para lazy loading
+              const imageObserver = new IntersectionObserver((entries, observer) => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          const img = entry.target;
+                          img.classList.add("loaded");
+                          observer.unobserve(img);
+                      }
+                  });
+              }, {
+                  rootMargin: '50px'
+              });
+
+              // Observar todas las imágenes lazy
+              document.querySelectorAll("img[loading='lazy']").forEach(img => {
+                  imageObserver.observe(img);
+              });
+          } else {
+              // Fallback para navegadores sin soporte
+              document.querySelectorAll("img[loading='lazy']").forEach(img => {
+                  img.classList.add("loaded");
+              });
+          }
+
+          // Manejar imágenes que ya se cargaron
+          document.querySelectorAll("img").forEach(img => {
+              if (img.complete) {
+                  img.classList.add("loaded");
+              } else {
+                  img.addEventListener("load", function() {
+                      this.classList.add("loaded");
+                  });
+              }
+          });
+      });
+      </script>
     </head>

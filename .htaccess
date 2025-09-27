@@ -120,6 +120,36 @@ RewriteEngine On
 # Bloquear acceso a directorios
 Options -Indexes
 
+# Servir imágenes WebP automáticamente si están disponibles
+<IfModule mod_rewrite.c>
+    # Verificar si el navegador soporta WebP
+    RewriteCond %{HTTP_ACCEPT} image/webp
+
+    # Verificar si existe la versión WebP del archivo solicitado
+    RewriteCond %{REQUEST_FILENAME} \.(jpe?g|png)$
+    RewriteCond %{REQUEST_FILENAME}\.webp -f
+
+    # Servir la versión WebP en lugar del original
+    RewriteRule ^(.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,E=accept:1,L]
+</IfModule>
+
+# Headers para WebP y optimización de imágenes
+<IfModule mod_headers.c>
+    # Vary header para WebP
+    Header append Vary Accept env=REDIRECT_accept
+
+    # Optimizar headers para imágenes
+    <FilesMatch "\.(webp|avif)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </FilesMatch>
+</IfModule>
+
+# MIME types para formatos modernos
+<IfModule mod_mime.c>
+    AddType image/webp .webp
+    AddType image/avif .avif
+</IfModule>
+
 # Páginas de error personalizadas
 ErrorDocument 404 /404.php
 ErrorDocument 500 /500.php

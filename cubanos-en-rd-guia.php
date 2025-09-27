@@ -79,7 +79,11 @@ echo "\n" . '</script>' . "\n";
 
         <section id="regularizacion">
             <h2>⚖️ 1. Regularización Migratoria en República Dominicana</h2>
-            
+
+            <div style="background-color: #e8f5e8; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
+                <p><strong>📖 Guía detallada:</strong> <a href="/regularizacion-rd.php" style="color: #28a745; text-decoration: none; font-weight: bold;">Regularización migratoria en República Dominicana - Guía completa</a></p>
+            </div>
+
             <h3>📋 Requisitos Básicos para Regularización</h3>
             <ul>
                 <li><strong>Pasaporte válido</strong> o documento de identidad cubano</li>
@@ -116,7 +120,11 @@ echo "\n" . '</script>' . "\n";
 
         <section id="trabajo-derechos">
             <h2>💼 2. Trabajo y Derechos Laborales</h2>
-            
+
+            <div style="background-color: #e8f5e8; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
+                <p><strong>📖 Guía detallada:</strong> <a href="/trabajo-derechos-rd.php" style="color: #28a745; text-decoration: none; font-weight: bold;">Trabajo formal e informal para cubanos en RD - Guía completa</a></p>
+            </div>
+
             <h3>🔍 Búsqueda de Empleo</h3>
             <ul>
                 <li><strong>Portales de empleo:</strong> Computrabajo, Búsqueda Trabajo RD, Indeed</li>
@@ -305,6 +313,26 @@ echo "\n" . '</script>' . "\n";
             </ul>
 
             <p><a href="errores-comunes-migrantes.php" class="btn-primary">📖 Leer Guía Completa de Errores Comunes</a></p>
+        </section>
+
+        <section id="testimonios-comunidad" style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+            <h2>💬 Testimonios de nuestra comunidad</h2>
+            <p>Lee experiencias reales de migrantes cubanos que han encontrado éxito en República Dominicana con el apoyo de Patriotas del Caribe.</p>
+
+            <div style="background-color: white; padding: 1.5rem; border-radius: 6px; margin: 1rem 0; border-left: 4px solid #28a745;">
+                <blockquote style="font-style: italic; margin: 0;">
+                    "Patriotas del Caribe me ayudó a entender mis derechos como migrante en República Dominicana. Su orientación fue fundamental para regularizar mi situación migratoria."
+                </blockquote>
+                <footer style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
+                    - María Elena R., Santo Domingo
+                </footer>
+            </div>
+
+            <p style="text-align: center; margin-top: 1.5rem;">
+                <a href="/testimonios.php" class="btn-primary" style="background-color: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold;">
+                    📖 Leer todos los testimonios
+                </a>
+            </p>
         </section>
 
         <section id="directorio-util">

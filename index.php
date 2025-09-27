@@ -19,7 +19,7 @@ include 'includes/head.php';
             <p class="eslogan">Después de Dios, la Patria y su Libertad</p>
         </div>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Logo de Patriotas" class="logo">
+            <img src="images/logo.png" alt="Logo Patriotas del Caribe - Fundación de apoyo a migrantes cubanos en República Dominicana" class="logo" loading="eager">
         </div>
     </div>
 </header>
@@ -40,8 +40,8 @@ include 'includes/head.php';
 
 <section class="redes-sociales-container">
     <div class="redes-sociales">
-        <a class="red-social"><img src="images/bandera_rd.png" alt="Bandera de República Dominicana, país anfitrión de migrantes cubanos" width="80" height="40"></a>
-        <a class="red-social"><img src="images/bandera_cuba.png" alt="Bandera de Cuba, país de origen de migrantes en República Dominicana" width="80" height="40"></a>
+        <a class="red-social"><img src="images/bandera_rd.png" alt="Bandera de República Dominicana, país anfitrión de migrantes cubanos" width="80" height="40" loading="lazy"></a>
+        <a class="red-social"><img src="images/bandera_cuba.png" alt="Bandera de Cuba, país de origen de migrantes en República Dominicana" width="80" height="40" loading="lazy"></a>
     </div>
 </section>
 
@@ -171,13 +171,13 @@ include 'includes/head.php';
     <p>Únete a Nuestros Grupos Sociales:</p>
     <div class="redes-sociales">
       <a class="red-social" href="https://www.facebook.com/groups/1672337816821354/?ref=share&mibextid=NSMWBT " target="_blank">
-        <img src="images/facebook.png" alt="Únete al grupo de Facebook de Patriotas del Caribe para migrantes cubanos en República Dominicana">
+        <img src="images/facebook.png" alt="Únete al grupo de Facebook de Patriotas del Caribe para migrantes cubanos en República Dominicana" loading="lazy">
       </a>
        <a class="red-social" href="https://chat.whatsapp.com/DimB9T4dukkCvSVBVq1iuV " target="_blank">
-        <img src="images/whatsapp.png" alt="Únete al grupo de WhatsApp de Patriotas del Caribe para apoyo a migrantes cubanos">
+        <img src="images/whatsapp.png" alt="Únete al grupo de WhatsApp de Patriotas del Caribe para apoyo a migrantes cubanos" loading="lazy">
       </a>
       <a class="red-social" href="https://www.instagram.com/patriotasdelcaribe?igsh=NjM2ZjE0ZmZtOGxi" target="_blank">
-        <img src="images/instagram.png" alt="Síguenos en Instagram para actualizaciones de Patriotas del Caribe">
+        <img src="images/instagram.png" alt="Síguenos en Instagram para actualizaciones de Patriotas del Caribe" loading="lazy">
       </a>
       
     </div>
