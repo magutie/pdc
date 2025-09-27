@@ -26,7 +26,7 @@ include 'includes/head.php';
 
 <main>
 <br><br>
-<section class="info-proceso">
+<article class="info-proceso">
     <div class="info-container">
         <p>
             <strong>PATRIOTAS DEL CARIBE</strong> es una iniciativa sin fines de lucro que busca la libertad y el bienestar político, económico y social de sus miembros.
@@ -36,12 +36,12 @@ include 'includes/head.php';
             Tenemos un formulario como parte de un censo confidencial y voluntario para <strong> conocer cuántos compatriotas cubanos </strong>se encuentran en situación irregular y canalizar iniciativas de regularización propuestas en nuestro <a href="plan_trabajo.php">Plan de trabajo</a>
         </p>
     </div>
-</section>
+</article>
 
 <section class="redes-sociales-container">
     <div class="redes-sociales">
-        <a class="red-social"><img src="images/bandera_rd.png" alt="RD" width="80" height="40"></a>
-        <a class="red-social"><img src="images/bandera_cuba.png" alt="Cuba" width="80" height="40"></a>
+        <a class="red-social"><img src="images/bandera_rd.png" alt="Bandera de República Dominicana, país anfitrión de migrantes cubanos" width="80" height="40"></a>
+        <a class="red-social"><img src="images/bandera_cuba.png" alt="Bandera de Cuba, país de origen de migrantes en República Dominicana" width="80" height="40"></a>
     </div>
 </section>
 
@@ -51,7 +51,7 @@ include 'includes/head.php';
     <div class="heroe">
         <h3>Juan Pablo Duarte</h3>
         <p class="cita">"Vivir sin patria es lo mismo que vivir sin honor."</p>
-        <img src="images/duarte.jpg" alt="Juan Pablo Duarte" class="heroe-img">
+        <img src="images/duarte.jpg" alt="Juan Pablo Duarte, padre fundador de República Dominicana y símbolo de libertad caribeña" class="heroe-img">
         <p>
             Padre Fundador de la República Dominicana, Duarte soñaba con una América libre del dominio extranjero y unida por los principios de libertad y autodeterminación. Su ejemplo inspiró a muchos otros movimientos independentistas del Caribe, incluyendo a los cubanos que lucharon por sacudirse el yugo colonial. Martí lo estudió con devoción y lo consideró uno de los grandes padres de la libertad en América Latina.
         </p>
@@ -61,7 +61,7 @@ include 'includes/head.php';
     <div class="heroe">
         <h3>Máximo Gómez</h3>
         <p class="cita">"No lucho por conquistas personales, sino por la libertad de los pueblos."</p>
-        <img src="images/gomez.jpg" alt="Máximo Gómez" class="heroe-img">
+        <img src="images/gomez.jpg" alt="Máximo Gómez, estratega militar dominicano que luchó por la independencia de Cuba" class="heroe-img">
         <p>
             Nacido en Baní, República Dominicana, Máximo Gómez fue un estratega militar clave en las guerras por la independencia de Cuba. Aunque dominicano de nacimiento, entregó su vida a la causa cubana y se convirtió en uno de sus héroes más reverenciados. Su valentía en el campo de batalla y su compromiso con la libertad caribeña lo convierten en el símbolo más poderoso de la unión histórica entre ambas naciones.
         </p>
@@ -70,7 +70,7 @@ include 'includes/head.php';
     <div class="heroe">
         <h3>José Martí</h3>
         <p class="cita">"La patria es ara, no pedestal."</p>
-        <img src="images/marti.jpg" alt="José Martí" class="heroe-img">
+        <img src="images/marti.jpg" alt="José Martí, poeta y revolucionario cubano, defensor de la libertad de Cuba y la unidad caribeña" class="heroe-img">
         <p>
             Poeta, filósofo y revolucionario cubano, José Martí es el alma de la independencia de Cuba. Su admiración por Juan Pablo Duarte y su estadía en Santo Domingo dejaron huellas profundas en su pensamiento. Martí veía a República Dominicana como un modelo de lucha patriótica, y a través de sus escritos y alianzas forjó puentes entre ambas islas en defensa de la soberanía, la dignidad y los valores republicanos.
         </p>
@@ -168,13 +168,13 @@ include 'includes/head.php';
     <p>Únete a Nuestros Grupos Sociales:</p>
     <div class="redes-sociales">
       <a class="red-social" href="https://www.facebook.com/groups/1672337816821354/?ref=share&mibextid=NSMWBT " target="_blank">
-        <img src="images/facebook.png" alt="Facebook">
+        <img src="images/facebook.png" alt="Únete al grupo de Facebook de Patriotas del Caribe para migrantes cubanos en República Dominicana">
       </a>
        <a class="red-social" href="https://chat.whatsapp.com/DimB9T4dukkCvSVBVq1iuV " target="_blank">
-        <img src="images/whatsapp.png" alt="Whatsapp">
+        <img src="images/whatsapp.png" alt="Únete al grupo de WhatsApp de Patriotas del Caribe para apoyo a migrantes cubanos">
       </a>
       <a class="red-social" href="https://www.instagram.com/patriotasdelcaribe?igsh=NjM2ZjE0ZmZtOGxi" target="_blank">
-        <img src="images/instagram.png" alt="Instagram">
+        <img src="images/instagram.png" alt="Síguenos en Instagram para actualizaciones de Patriotas del Caribe">
       </a>
       
     </div>
