@@ -1,0 +1,57 @@
+# Archivos de configuración sensibles
+.env
+.env.local
+.env.production
+.env.staging
+
+# Archivos de base de datos
+*.sql
+*.db
+*.sqlite
+
+# Archivos de log
+*.log
+logs/
+
+# Archivos temporales
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de backup
+*.bak
+*.backup
+
+# Archivos de cache
+cache/
+tmp/
+
+# Archivos de sesión PHP
+sessions/
+
+# Archivos de uploads (si los hay)
+uploads/
+
+# Archivos de configuración del servidor
+.htaccess.local
+config.local.php
+
+# Archivos de versionado
+version.txt
+
+# Archivos de dependencias (se instalan con composer)
+vendor/
+
+# Archivos de verificación de Google
+google*.html
+
+# Archivos de script personalizados
+script
