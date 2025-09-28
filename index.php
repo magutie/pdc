@@ -218,4 +218,4 @@ include 'includes/head.php';
     <p>&copy; 2025 Patriotas del Caribe. Todos los derechos reservados.</p>
 </footer>
 
-<?php include 'includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?><!-- Deploy test Sun Sep 28 13:24:07 AST 2025 -->
