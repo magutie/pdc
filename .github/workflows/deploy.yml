@@ -18,6 +18,16 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
+          
+      - name: Setup SSH for GitHub
+        run: |
+          mkdir -p ~/.ssh
+          echo "Host github.com" >> ~/.ssh/config
+          echo "  HostName github.com" >> ~/.ssh/config
+          echo "  User git" >> ~/.ssh/config
+          echo "  IdentityFile ~/.ssh/github_key" >> ~/.ssh/config
+          echo "  StrictHostKeyChecking no" >> ~/.ssh/config
+          chmod 600 ~/.ssh/config
 
       - name: Deploy (git pull + deploy.sh remoto)
         uses: appleboy/ssh-action@v1.0.3
@@ -31,8 +41,22 @@ jobs:
             set -Eeuo pipefail
             APP_NAME="pdc"
             APP_DIR="$HOME/apps/$APP_NAME"
-            REPO_URL="https://github.com/magutie/pdc.git"
+            REPO_URL="git@github.com:magutie/pdc.git"
             BRANCH="main"
+
+            # Configurar SSH para GitHub
+            mkdir -p ~/.ssh
+            echo "${{ secrets.GITHUB_SSH_KEY }}" > ~/.ssh/github_key
+            chmod 600 ~/.ssh/github_key
+            echo "Host github.com" >> ~/.ssh/config
+            echo "  HostName github.com" >> ~/.ssh/config
+            echo "  User git" >> ~/.ssh/config
+            echo "  IdentityFile ~/.ssh/github_key" >> ~/.ssh/config
+            echo "  StrictHostKeyChecking no" >> ~/.ssh/config
+            chmod 600 ~/.ssh/config
+            
+            # Agregar GitHub a known_hosts
+            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 
             # bootstrap mínimo si es la primera vez
             mkdir -p "$APP_DIR"/{repos,shared,releases}
