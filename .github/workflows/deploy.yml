@@ -1,0 +1,44 @@
+name: Deploy to Hostinger via SSH (no FTP)
+
+on:
+  push:
+    branches: [ "main" ]   # cambia si quieres otra rama
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Deploy (git pull + deploy.sh remoto)
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script_stop: true
+          script: |
+            set -Eeuo pipefail
+            APP_NAME="pdc"
+            APP_DIR="$HOME/apps/$APP_NAME"
+            REPO_URL="https://github.com/magutie/pdc.git"
+            BRANCH="main"
+
+            # bootstrap mínimo si es la primera vez
+            mkdir -p "$APP_DIR"/{repos,shared,releases}
+            if [ ! -d "$APP_DIR/repos/working/.git" ]; then
+              git clone --depth=1 -b "$BRANCH" "$REPO_URL" "$APP_DIR/repos/working"
+            fi
+
+            # ejecuta el deploy script (lo creamos en el paso 3)
+            bash "$APP_DIR/deploy.sh"
