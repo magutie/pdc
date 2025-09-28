@@ -223,3 +223,4 @@ include 'includes/head.php';
 <!-- Deploy test con DEPLOY_SSH_KEY Sun Sep 28 13:49:49 AST 2025 -->
 <!-- Test con clave correcta Sun Sep 28 14:04:22 AST 2025 -->
 <!-- Test DEPLOY_SSH_KEY fix Sun Sep 28 14:08:33 AST 2025 -->
+<!-- Test con DEPLOY_SSH_KEY configurado Sun Sep 28 14:12:37 AST 2025 -->
