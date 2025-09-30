@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="eslogan">Después de Dios, la Patria y su Libertad</p>
         </div>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Logo" class="logo">
+            <img src="images/logo.png" alt="Patriotas del Caribe - Fundación de apoyo a migrantes cubanos en República Dominicana" class="logo" loading="eager">
         </div>
     </div>
     <nav class="navbar">
@@ -161,13 +161,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Únete a Nuestros Grupos Sociales:</p>
     <div class="redes-sociales">
       <a class="red-social" href="https://www.facebook.com/groups/1672337816821354/?ref=share&mibextid=NSMWBT " target="_blank">
-        <img src="images/facebook.png" alt="Facebook">
+        <img src="images/facebook.png" alt="Únete al grupo de Facebook de Patriotas del Caribe para cubanos en República Dominicana" loading="lazy">
       </a>
        <a class="red-social" href="https://chat.whatsapp.com/DimB9T4dukkCvSVBVq1iuV " target="_blank">
         <img src="images/whatsapp.png" alt="Whatsapp">
       </a>
       <a class="red-social" href="https://www.instagram.com/patriotasdelcaribe?igsh=NjM2ZjE0ZmZtOGxi" target="_blank">
-        <img src="images/instagram.png" alt="Instagram">
+        <img src="images/instagram.png" alt="Síguenos en Instagram - Patriotas del Caribe, apoyo a migrantes cubanos en RD" loading="lazy">
       </a>
       
     </div>

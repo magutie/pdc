@@ -17,7 +17,7 @@ include 'includes/head.php';
             <p class="eslogan">Después de Dios, la Patria y su Libertad</p>
         </div>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Logo" class="logo">
+            <img src="images/logo.png" alt="Patriotas del Caribe - Fundación de apoyo a migrantes cubanos en República Dominicana" class="logo" loading="eager">
         </div>
     </div>
     <nav class="navbar">
