@@ -32,7 +32,7 @@ vendor/bin/phpunit
 ### Environment Setup
 ```bash
 # Copy environment configuration
-cp .env.example .env
+cp env.example .env
 # Edit .env with actual database and email credentials
 
 # Database setup (manual)
@@ -46,20 +46,33 @@ cp .env.example .env
 - Or configure Apache/Nginx to serve from project root
 - Ensure MySQL is running and database is configured
 
+### Image Optimization
+```bash
+# Convert images to WebP format (requires cwebp utility)
+./convert-to-webp.sh
+
+# The script processes all PNG/JPG images in images/ directory
+# and generates .webp versions while preserving originals
+```
+
 ## Project Architecture
 
 ### Directory Structure
 ```
 ├── index.php              # Main landing page
+├── procesar.php           # Form submission processing
+├── confirmar.php          # Email confirmation handler
 ├── includes/              # Reusable PHP components and utilities
 │   ├── head.php           # Meta tags, SEO, and performance optimization
 │   ├── config.php         # Site configuration and helper functions
 │   ├── schemas.php        # JSON-LD structured data
 │   ├── navigation-system.php
 │   ├── cta-templates.php
+│   ├── meta-templates.php
+│   ├── image-optimizer.php
 │   ├── performance-optimizer.php
 │   └── footer.php
-├── pages/                 # Individual content pages
+├── Content pages (root):  # Individual content pages
 │   ├── historia.php
 │   ├── mision_patriotica.php
 │   ├── sobre_cuba.php
@@ -68,16 +81,21 @@ cp .env.example .env
 │   ├── plan_trabajo.php
 │   ├── quienes-somos.php
 │   ├── transparencia.php
-│   ├── cubanos-en-rd-guia.php
-│   └── regularizacion-rd.php
-├── forms/                 # Form handling
-│   ├── procesar.php       # Form submission processing
-│   └── confirmar.php      # Email confirmation handler
-├── assets/
-│   ├── images/            # Optimized images and favicons
-│   ├── css/               # Stylesheets
-│   └── js/                # JavaScript files
+│   ├── testimonios.php
+│   ├── cubanos-en-rd-guia.php      # Hub page
+│   ├── trabajo-derechos-rd.php     # Cluster page
+│   ├── regularizacion-rd.php
+│   ├── enlaces-utiles.php
+│   ├── privacidad.php
+│   └── terminos.php
+├── images/                # Optimized images and favicons
+├── css/                   # Stylesheets
+│   └── style-patriotas.css
 ├── docs/                  # SEO strategy and documentation
+├── convert-to-webp.sh     # Image optimization script
+├── .htaccess              # Apache configuration
+├── sitemap.xml            # SEO sitemap
+├── robots.txt             # Search engine directives
 └── vendor/                # Composer dependencies
 ```
 
@@ -122,10 +140,11 @@ require_once 'includes/head.php';
 ```
 
 ### Database Integration
-- Uses environment variables for database configuration
+- Uses environment variables for database configuration (from .env file)
 - Prepared statements for SQL security
 - Two-table system: `pendientes_confirmacion` → `registros_confirmados`
 - PHPMailer integration for email confirmations
+- **IMPORTANT**: Database credentials are currently hardcoded in procesar.php (line 4-8). When working with this file, migrate to use environment variables from includes/config.php pattern
 
 ### SEO Implementation
 The site implements comprehensive SEO following the strategy in `BACKLOG_SEO_PDC.md`:
@@ -166,11 +185,12 @@ The site uses a hub-and-spoke content model:
 
 ## Security Considerations
 
-- Environment variables for sensitive data (.env file)
+- Environment variables for sensitive data (.env file, NOT .env.example)
 - Protected files via .htaccess (composer.json, .env)
 - Input validation and sanitization
 - Prepared SQL statements
 - Security headers in .htaccess
+- **CRITICAL**: Never commit real database credentials or API keys. Use env.example as template only
 
 ## Analytics and Tracking
 

@@ -142,7 +142,7 @@ function loadNonCriticalCSS($css_file, $version = '') {
     $version_param = $version ? '?v=' . $version : '';
     
     return '
-    <link rel="preload" href="' . $css_file . $version_param . '" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="' . $css_file . $version_param . '" as="style" onload="this.rel=\'stylesheet\'">
     <noscript><link rel="stylesheet" href="' . $css_file . $version_param . '"></noscript>
     <script>
         // Polyfill para navegadores que no soportan onload en link
@@ -259,8 +259,8 @@ function getOptimizedJavaScript() {
 function preloadCriticalResources() {
     return '
     <!-- Preload de recursos críticos -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
