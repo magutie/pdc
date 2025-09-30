@@ -77,6 +77,12 @@ $og_image = $site_config['site_url'] . '/images/preview.jpg';
     });
     </script>
 
+    <!-- GOOGLE ADSENSE AUTO ADS -->
+    <?php if (shouldShowAdsense()): ?>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=<?php echo $site_config['adsense_publisher_id']; ?>"
+        crossorigin="anonymous"></script>
+    <?php endif; ?>
+
     <!-- PERFORMANCE: CSS Y FUENTES OPTIMIZADAS -->
     <?php 
     require_once 'performance-optimizer.php';
@@ -95,6 +101,11 @@ $og_image = $site_config['site_url'] . '/images/preview.jpg';
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <?php if (shouldShowAdsense()): ?>
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="//adservice.google.com">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+    <?php endif; ?>
 
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">

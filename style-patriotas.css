@@ -657,3 +657,29 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
 .mt-4{ margin-top: var(--space-4) }
 .text-sm{ font-size: 0.9rem }
 .footer-section{ margin-top: 0.5rem }
+
+/* === GOOGLE ADSENSE ESTILOS === */
+/* Contenedores de anuncios con espaciado apropiado */
+.adsbygoogle {
+  display: block;
+  margin: var(--space-8) auto;
+  text-align: center;
+}
+
+/* Espaciado para anuncios in-article */
+ins.adsbygoogle[data-ad-format="fluid"] {
+  margin: var(--space-6) 0;
+}
+
+/* Prevenir layout shift con min-height */
+.adsbygoogle[data-ad-status="unfilled"] {
+  min-height: 50px;
+  background: transparent;
+}
+
+/* Responsive: ajustar márgenes en móvil */
+@media (max-width: 768px) {
+  .adsbygoogle {
+    margin: var(--space-4) auto;
+  }
+}
