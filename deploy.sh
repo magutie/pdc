@@ -4,50 +4,34 @@ set -Eeuo pipefail
 APP_NAME="pdc"
 APP_DIR="$HOME/apps/$APP_NAME"
 REPO_DIR="$APP_DIR/repos/working"
-RELEASES_DIR="$APP_DIR/releases"
-CURRENT="$APP_DIR/current"
+PUBLIC_HTML="$HOME/domains/patriotasdelcaribe.com/public_html"
 BRANCH="main"
-PHP_BIN="php"
-NODE_BUILD="false"  # no compila nada por defecto
 
+# Actualizar repositorio
 cd "$REPO_DIR"
 git fetch --all --prune
 git checkout "$BRANCH"
 git pull --ff-only
 
-TS=$(date +%Y%m%d%H%M%S)
-cp -R "$REPO_DIR" "$RELEASES_DIR/$TS"
-cd "$RELEASES_DIR/$TS"
+# Copiar archivos a public_html (excluyendo archivos innecesarios)
+rsync -av --delete \
+  --exclude='.git' \
+  --exclude='.github' \
+  --exclude='node_modules' \
+  --exclude='vendor' \
+  --exclude='.env' \
+  --exclude='*.md' \
+  --exclude='.gitignore' \
+  --exclude='bootstrap.sh' \
+  --exclude='deploy.sh' \
+  --exclude='convert-to-webp.sh' \
+  --exclude='composer.json' \
+  --exclude='composer.lock' \
+  --exclude='docs/' \
+  --exclude='diagnostico.php' \
+  "$REPO_DIR/" "$PUBLIC_HTML/"
 
-# Enlazar configuración compartida (.env, storage, logs)
-mkdir -p "$APP_DIR/shared"/{storage,logs}
-[ -f "$APP_DIR/shared/.env" ] && ln -sfn "$APP_DIR/shared/.env" .env
+# Enlazar .env compartido si existe
+[ -f "$APP_DIR/shared/.env" ] && ln -sfn "$APP_DIR/shared/.env" "$PUBLIC_HTML/.env"
 
-# Si fuese Laravel (detecta artisan)
-if [ -f artisan ]; then
-  rm -rf storage || true
-  ln -sfn "$APP_DIR/shared/storage" storage
-  # Composer si aplica
-  if [ -f composer.json ]; then
-    composer install --no-dev --prefer-dist --optimize-autoloader || true
-  fi
-  # Optimizaciones Laravel
-  $PHP_BIN artisan config:clear || true
-  $PHP_BIN artisan cache:clear || true
-  $PHP_BIN artisan route:clear || true
-  $PHP_BIN artisan view:clear || true
-  $PHP_BIN artisan migrate --force || true
-  $PHP_BIN artisan optimize || true
-else
-  # Sitio PHP plano: nada que compilar
-  true
-fi
-
-# Activar release (zero-downtime)
-ln -sfn "$RELEASES_DIR/$TS" "$CURRENT"
-
-# Permisos storage si existiera
-find "$APP_DIR/shared/storage" -type d -exec chmod 775 {} \; 2>/dev/null || true
-find "$APP_DIR/shared/storage" -type f -exec chmod 664 {} \; 2>/dev/null || true
-
-echo "✅ Deploy OK: $TS"
+echo "✅ Deploy OK a public_html"
