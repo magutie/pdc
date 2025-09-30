@@ -1,55 +1,11 @@
-<?php 
-$version = file_exists('version.txt') ? trim(file_get_contents('version.txt')) : time();
-
+<?php
 // Configuración específica de la página
 $page_title = 'Plan de trabajo: regularización y apoyo a migrantes cubanos';
 $page_description = 'Conoce nuestro plan integral para la regularización humanitaria y apoyo a migrantes cubanos en República Dominicana.';
+$canonical_path = '/plan_trabajo.php';
 
-include 'includes/head.php';
+require_once 'includes/head.php';
 ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-patriotas.css?v=<?php echo $version; ?>">
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    
- <!-- Open Graph (Facebook/Meta) -->
-  <meta property="og:title" content="Patriotas del Caribe - Cuba Libre, Caribe Unido">
-  <meta property="og:description" content="Movimiento cívico cubano-dominicano que defiende los derechos humanos, la soberanía nacional y la libertad del pueblo cubano.">
-  <meta property="og:url" content="https://www.patriotasdelcaribe.com/">
-  <meta property="og:image" content="https://www.patriotasdelcaribe.com/images/preview.jpg">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Patriotas del Caribe - Cuba Libre, Caribe Unido">
-  <meta name="twitter:description" content="Movimiento por la libertad de Cuba, desde el corazón del Caribe. Activismo pacífico, unión y defensa de la verdad.">
-  <meta name="twitter:image" content="https://www.patriotasdelcaribe.com/images/preview.jpg">
-
-  <!-- Preload CSS -->
-  <link rel="preload" href="style-patriotas.css?v=<?php echo $version; ?>" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="style-patriotas.css?v=<?php echo $version; ?>"></noscript>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap"></noscript>
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="shortcut icon" href="images/favicon.ico?v=<?php echo $version; ?>">
-  
-  <meta name="google-site-verification" content="r5ZpRdEiBC__okZhv4_Gl3i_D-P7K_bZrcBgRDBSdIg" />
-
- <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NBVVS6PG');</script>
-<!-- End Google Tag Manager -->
-</head>
 <body>
     
      <!-- Google Tag Manager (noscript) -->
@@ -183,7 +139,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="faq.php">FAQ</a> |
         <a href="transparencia.php">Transparencia</a>
     </div>
-    <div class="footer-links" style="margin-top: 0.5rem;">
+    <div class="footer-links footer-section">
         <strong>Guías para Migrantes:</strong>
         <a href="regularizacion-rd.php">Regularización</a> |
         <a href="trabajo-derechos-rd.php">Trabajo y Derechos</a> |
@@ -194,7 +150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="errores-comunes-migrantes.php">Errores Comunes</a> |
         <a href="enlaces-utiles.php">Enlaces Útiles</a>
     </div>
-    <div class="footer-links" style="margin-top: 0.5rem; font-size: 0.9rem;">
+    <div class="footer-links footer-section text-sm">
         <a href="privacidad.php">Privacidad</a> |
         <a href="terminos.php">Términos</a>
 

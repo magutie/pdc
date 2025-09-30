@@ -1,9 +1,169 @@
+/* === TOKENS & PRESETS (Modernizados) === */
+:root{
+  /* Colores (marca: rojo patriota + azules de apoyo) */
+  --clr-primary: #c62828;   /* rojo marca */
+  --clr-primary-900:#a00000;
+  --clr-secondary:#0d47a1;  /* azul plan */
+  --clr-bg:#ffffff;
+  --clr-surface:#ffffff;
+  --clr-text:#222;
+  --clr-text-muted:#555;
+  --clr-border:#e5e7eb;
 
-/* === ESTILO GENERAL === */
+  /* Tipografía */
+  --ff-sans: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  --ff-serif:'Playfair Display', ui-serif, Georgia, serif;
+
+  /* Ritmo espacial y radios */
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --radius-2: .375rem;
+  --radius-3: .5rem;
+  --radius-4: .75rem;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.06);
+  --shadow-2: 0 4px 12px rgba(0,0,0,.08);
+
+  /* Anchos */
+  --container: 1200px;
+  --easing: cubic-bezier(.22,.61,.36,1);
+}
+
+/* Modo oscuro: automático y elegible para toggle con .theme-dark en <html> si quisieras forzarlo */
+@media (prefers-color-scheme: dark){
+  :root{
+    --clr-bg:#0b0b0c;
+    --clr-surface:#121214;
+    --clr-text:#f3f4f6;
+    --clr-text-muted:#c7c9cf;
+    --clr-border:#2a2b2f;
+    --shadow-1: 0 1px 2px rgba(0,0,0,.4);
+    --shadow-2: 0 8px 20px rgba(0,0,0,.45);
+  }
+}
+.theme-dark{
+  color-scheme: dark;
+}
+
+/* Reset sutil + base moderna */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:var(--ff-sans);
+  background:var(--clr-bg);
+  color:var(--clr-text);
+  margin:0;
+  line-height:1.6;
+  text-rendering:optimizeLegibility;
+}
+
+/* Contenedor responsivo */
+.container{
+  max-width:var(--container);
+  margin-inline:auto;
+  padding-inline: clamp(16px, 3vw, 32px);
+}
+
+/* Tipografía mejorada */
+h1,h2,h3,h4{
+  font-family:var(--ff-serif);
+  color:var(--clr-primary);
+  margin:0 0 var(--space-4);
+  line-height:1.2;
+}
+p{margin:0 0 var(--space-4); color:var(--clr-text)}
+.muted{color:var(--clr-text-muted)}
+
+/* Utilidades layout (reemplazan estilos inline) */
+.flex-center{
+  display:flex; gap:var(--space-4); justify-content:center; flex-wrap:wrap; margin:var(--space-4) 0;
+}
+.breadcrumb-nav{
+  background: color-mix(in srgb, var(--clr-secondary) 6%, var(--clr-surface));
+  padding: var(--space-6);
+  border-radius: var(--radius-3);
+  margin: var(--space-8) 0;
+  border:1px solid var(--clr-border);
+}
+.info-box{
+  background: color-mix(in srgb, var(--clr-primary) 4%, var(--clr-surface));
+  border-left:4px solid var(--clr-primary);
+  padding: var(--space-6);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-1);
+}
+.content-wrapper{
+  max-width: var(--container);
+  margin:0 auto;
+  padding: clamp(16px, 3vw, 32px);
+}
+.grid-2-col{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: var(--space-6);
+  margin: var(--space-8) 0;
+}
+
+/* Componentes modernos */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:.5ch;
+  padding:.65rem 1rem;
+  font-weight:700;
+  border-radius: var(--radius-3);
+  border:1px solid transparent;
+  text-decoration:none;
+  transition: transform .08s var(--easing), background .2s var(--easing), border-color .2s var(--easing);
+  will-change:transform;
+}
+.btn:active{ transform: translateY(1px) }
+.btn-primary{
+  background:var(--clr-primary);
+  color:#fff;
+}
+.btn-primary:hover{ background: var(--clr-primary-900) }
+
+.btn-secondary{
+  background:#fff;
+  color:var(--clr-secondary);
+  border-color: color-mix(in srgb, var(--clr-secondary) 40%, #fff);
+}
+.btn-secondary:hover{
+  background: color-mix(in srgb, var(--clr-secondary) 8%, #fff);
+}
+
+.card{
+  background:var(--clr-surface);
+  border:1px solid var(--clr-border);
+  border-radius: var(--radius-4);
+  box-shadow: var(--shadow-1);
+  padding: clamp(16px, 2.2vw, 28px);
+}
+.card:hover{ box-shadow: var(--shadow-2) }
+
+/* Badges */
+.badge{
+  display:inline-block;
+  font-size:.875rem;
+  border-radius:999px;
+  padding:.25rem .6rem;
+  background: color-mix(in srgb, var(--clr-secondary) 12%, var(--clr-surface));
+  color: var(--clr-secondary);
+  border:1px solid color-mix(in srgb, var(--clr-secondary) 30%, #fff);
+}
+
+/* Imágenes: suave aparición */
+img, .lazy-image{opacity:.001; transition:opacity .4s var(--easing)}
+.lazy-image.loaded, img[loading="lazy"].loaded, img{opacity:1}
+
+/* === ESTILO GENERAL (adaptado con tokens) === */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-  color: #333;
+  font-family: var(--ff-sans);
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
   margin: 0;
   padding: 0;
 }
@@ -193,13 +353,16 @@ footer {
   color: #ffecec;
 }
 
-/* === NAVBAR === */
+/* === NAVBAR (refinada con backdrop-filter) === */
 .navbar {
+  position:sticky; top:0; z-index:50;
+  backdrop-filter:saturate(140%) blur(8px);
+  background: color-mix(in srgb, var(--clr-primary) 85%, transparent);
+  border-bottom:1px solid color-mix(in srgb, var(--clr-primary) 20%, #000);
   display: flex;
   justify-content: center;
   gap: 2rem;
   font-weight: bold;
-  background-color: #c62828;
   padding: 0.5rem 0;
 }
 .nav-list {
@@ -425,5 +588,72 @@ footer {
   transform: scale(1.1);
 }
 
+/* === PLAN DE TRABAJO (fusionado desde style-plan-trabajo.css) === */
+.info-proceso{
+  background-color: var(--clr-surface);
+  border-left: 6px solid var(--clr-primary);
+  border-radius: 8px;
+  box-shadow: var(--shadow-1);
+  padding: var(--space-8);
+  margin: var(--space-8) auto;
+  max-width: 960px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--clr-text);
+}
+.info-proceso h2{
+  text-align:center;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  color: var(--clr-primary);
+  margin-bottom: 1.5rem;
+}
+.info-proceso p{ text-align:justify; margin-bottom:1.5rem; }
+.info-proceso ul{ padding-left: 1rem; }
+.info-proceso ul li{
+  background: var(--clr-surface);
+  border-left:4px solid var(--clr-primary);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  list-style:none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+.info-proceso ul li ul{ padding-left:1.2rem; margin-top:.5rem; }
+.info-proceso ul li ul li{ border-left:none; padding:.4rem 0; box-shadow:none; background:none; }
 
+/* === BOTONES COMPARTIR (migrados desde head inline) === */
+.botones-compartir{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:1rem;
+}
+.botones-compartir .btn{
+  padding:10px 20px;
+  border-radius:6px;
+  color:white; font-weight:bold;
+  text-decoration:none; cursor:pointer;
+  transition:opacity .2s var(--easing);
+  border:none;
+}
+.red-whatsapp{ background-color:#25D366 }
+.red-facebook{ background-color:#1877F2 }
+.red-twitter{ background-color:#000000 }
+.red-enlace{ background-color:#6c757d }
+.botones-compartir .btn:hover{ opacity:.9 }
 
+/* === MICRO-INTERACCIONES Y ACCESIBILIDAD === */
+/* Micro-animaciones de foco/hover accesibles */
+a, button, .btn { outline-offset: 2px }
+a:focus-visible, button:focus-visible, .btn:focus-visible{
+  outline: 2px solid color-mix(in srgb, var(--clr-secondary) 60%, #fff);
+}
+
+/* Elevación suave en hover para .card y CTAs */
+.card:hover, .btn:hover{
+  filter: saturate(1.05);
+}
+
+/* === UTILIDADES ADICIONALES === */
+.mt-2{ margin-top: var(--space-2) }
+.mt-3{ margin-top: var(--space-3) }
+.mt-4{ margin-top: var(--space-4) }
+.text-sm{ font-size: 0.9rem }
+.footer-section{ margin-top: 0.5rem }

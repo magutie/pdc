@@ -397,7 +397,7 @@ echo "\n" . '</script>' . "\n";
         <a href="faq.php">FAQ</a> |
         <a href="transparencia.php">Transparencia</a>
     </div>
-    <div class="footer-links" style="margin-top: 0.5rem;">
+    <div class="footer-links footer-section">
         <strong>Guías para Migrantes:</strong>
         <a href="regularizacion-rd.php">Regularización</a> |
         <a href="trabajo-derechos-rd.php">Trabajo y Derechos</a> |
@@ -408,7 +408,7 @@ echo "\n" . '</script>' . "\n";
         <a href="errores-comunes-migrantes.php">Errores Comunes</a> |
         <a href="enlaces-utiles.php">Enlaces Útiles</a>
     </div>
-    <div class="footer-links" style="margin-top: 0.5rem; font-size: 0.9rem;">
+    <div class="footer-links footer-section text-sm">
         <a href="privacidad.php">Privacidad</a> |
         <a href="terminos.php">Términos</a>
     </div>
