@@ -53,7 +53,7 @@ echo "\n" . '</script>' . "\n";
       <p class="eslogan">Después de Dios, la Patria y su Libertad</p>
     </div>
     <div class="logo-container">
-      <img src="images/logo.png" alt="Logo Patriotas" class="logo" />
+      <img src="images/logo.png" alt="Logo Patriotas del Caribe - Fundación de apoyo a migrantes cubanos en República Dominicana" class="logo" loading="eager" />
     </div>
   </div>
 </header>

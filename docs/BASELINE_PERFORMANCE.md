@@ -46,8 +46,9 @@
 
 ## 📊 Baseline Inicial (Pre-Optimización)
 
-**Fecha:** [PENDIENTE DE MEDIR]
-**Estado:** Sitio recién desplegado con optimizaciones
+**Fecha:** 30 de septiembre de 2025
+**Estado:** Sitio verificado accesible - Optimizaciones aplicadas y desplegadas
+**URL Verificada:** ✅ https://www.patriotasdelcaribe.com/ cargando correctamente
 
 ### Optimizaciones Ya Aplicadas ✅
 
@@ -95,19 +96,23 @@ Basado en las optimizaciones aplicadas:
 ## 📝 Checklist de Medición
 
 ### Primera Medición (Baseline Real)
-- [ ] Ejecutar PageSpeed Insights - Móvil
-- [ ] Ejecutar PageSpeed Insights - Escritorio
+- [x] Verificar que el sitio esté accesible públicamente ✅ COMPLETADO
+- [ ] Ejecutar PageSpeed Insights - Móvil (Manual)
+- [ ] Ejecutar PageSpeed Insights - Escritorio (Manual)
 - [ ] Capturar screenshots de ambos
 - [ ] Documentar scores en este archivo
-- [ ] Verificar que el sitio esté accesible públicamente
 - [ ] Esperar 24-48h después del deploy para datos estables
 
+**⚠️ NOTA:** La API de PageSpeed Insights alcanzó límite de cuota. Medir manualmente en: https://pagespeed.web.dev/
+
 ### Páginas a Medir
-1. [ ] **index.php** (Homepage - Prioritaria)
-2. [ ] **cubanos-en-rd-guia.php** (Hub - Importante)
-3. [ ] **trabajo-derechos-rd.php** (Cluster - Contenido extenso)
-4. [ ] **historia.php** (Imágenes grandes optimizadas)
-5. [ ] **faq.php** (FAQ con schema)
+1. [ ] **index.php** (Homepage - Prioritaria) - https://www.patriotasdelcaribe.com/
+2. [ ] **cubanos-en-rd-guia.php** (Hub) - https://www.patriotasdelcaribe.com/cubanos-en-rd-guia.php
+3. [ ] **trabajo-derechos-rd.php** (Cluster) - https://www.patriotasdelcaribe.com/trabajo-derechos-rd.php
+4. [ ] **salud-educacion-migrantes.php** (Cluster) - https://www.patriotasdelcaribe.com/salud-educacion-migrantes.php
+5. [ ] **vivienda-costo-vida-rd.php** (Cluster) - https://www.patriotasdelcaribe.com/vivienda-costo-vida-rd.php
+6. [ ] **comunidades-apoyo-rd.php** (Cluster) - https://www.patriotasdelcaribe.com/comunidades-apoyo-rd.php
+7. [ ] **tramites-frecuentes-rd.php** (Cluster) - https://www.patriotasdelcaribe.com/tramites-frecuentes-rd.php
 
 ---
 
@@ -188,19 +193,21 @@ Basado en las optimizaciones aplicadas:
 ## 📞 Próximos Pasos
 
 1. **Inmediato (Hoy):**
-   - Verificar que el sitio esté accesible públicamente
-   - Ejecutar primera medición en PageSpeed Insights
-   - Documentar resultados en este archivo
+   - ✅ Verificar que el sitio esté accesible públicamente - COMPLETADO
+   - ⏳ Ejecutar primera medición en PageSpeed Insights (manual: https://pagespeed.web.dev/)
+   - ⏳ Documentar resultados en este archivo
 
 2. **Esta Semana:**
-   - Medir todas las páginas principales
+   - Medir todas las 7 páginas principales (homepage + 6 clusters)
    - Identificar página con peor performance
    - Priorizar optimizaciones específicas
+   - Implementar lazy loading en páginas cluster restantes
 
 3. **Este Mes:**
-   - Configurar monitoreo automático
+   - Configurar monitoreo en Google Search Console
    - Establecer alertas si scores bajan
    - Crear proceso de medición mensual
+   - Completar últimas 2 páginas cluster
 
 ---
 
@@ -213,5 +220,41 @@ Basado en las optimizaciones aplicadas:
 
 ---
 
+## 📋 Instrucciones para Medición Manual
+
+Debido al límite de cuota de la API de PageSpeed Insights, usar la interfaz web:
+
+1. Abrir: https://pagespeed.web.dev/
+2. Ingresar URL (ejemplo: https://www.patriotasdelcaribe.com/)
+3. Esperar análisis (30-60 segundos)
+4. Capturar screenshot de:
+   - Score general (móvil y escritorio)
+   - Core Web Vitals (LCP, CLS, INP)
+   - Oportunidades de mejora principales
+5. Documentar resultados en la sección "Medición: [Fecha]" más abajo
+
+### Template de Documentación:
+
+```markdown
+## Medición: [Fecha]
+
+### Homepage (index.php)
+- **URL:** https://www.patriotasdelcaribe.com/
+- **Móvil:**
+  - PageSpeed Score: XX/100
+  - LCP: X.Xs
+  - INP: XXXms
+  - CLS: 0.XX
+- **Escritorio:**
+  - PageSpeed Score: XX/100
+  - LCP: X.Xs
+  - INP: XXXms
+  - CLS: 0.XX
+- **Observaciones:** [notas]
+```
+
+---
+
 **Última actualización:** 30 de septiembre de 2025
-**Próxima medición:** [PENDIENTE - Después de verificar deploy]
+**Próxima medición:** Pendiente de ejecución manual en https://pagespeed.web.dev/
+**Estado del Sitio:** ✅ Verificado accesible y cargando correctamente

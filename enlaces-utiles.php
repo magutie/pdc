@@ -2,10 +2,20 @@
 $version = file_exists('version.txt') ? trim(file_get_contents('version.txt')) : time();
 
 // Configuración específica de la página
-$page_title = 'Enlaces Útiles y Directorios - Recursos para Migrantes Cubanos';
-$page_description = 'Directorio completo de enlaces útiles, organizaciones aliadas, recursos legales y servicios de apoyo para migrantes cubanos en República Dominicana.';
+$page_title = 'Directorio Completo de Enlaces Útiles para Migrantes Cubanos en RD';
+$page_description = 'Directorio completo de enlaces útiles, organizaciones gubernamentales, ONGs internacionales, recursos legales, servicios de salud y apoyo para migrantes cubanos en República Dominicana.';
+$canonical_path = '/enlaces-utiles.php';
 
-include 'includes/head.php';
+require_once 'includes/schemas.php';
+
+// Breadcrumb schema
+$breadcrumbSchema = generateBreadcrumbSchema([
+    ['name' => 'Inicio', 'url' => '/'],
+    ['name' => 'Guía para Cubanos en RD', 'url' => '/cubanos-en-rd-guia.php'],
+    ['name' => 'Directorio de Enlaces', 'url' => '/enlaces-utiles.php']
+]);
+
+require_once 'includes/head.php';
 
 // Generar schema Article
 $articleSchema = generateArticleSchema(
@@ -29,7 +39,7 @@ echo "\n" . '</script>' . "\n";
             <p class="eslogan">Después de Dios, la Patria y su Libertad</p>
         </div>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Logo de Patriotas del Caribe" class="logo">
+            <img src="images/logo.png" alt="Logo Patriotas del Caribe - Fundación de apoyo a migrantes cubanos en República Dominicana" class="logo" loading="eager">
         </div>
     </div>
     <nav class="navbar">
@@ -291,6 +301,98 @@ echo "\n" . '</script>' . "\n";
             </div>
         </section>
 
+        <!-- Servicios Financieros -->
+        <section style="margin: 3rem 0;">
+            <h2>💰 Servicios Financieros y Bancarios</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #1976d2;">
+                    <h4>🏦 Bancos que Aceptan Pasaporte</h4>
+                    <ul>
+                        <li><strong>Banco Popular:</strong> Apertura con pasaporte</li>
+                        <li><strong>BHD León:</strong> Cuenta de ahorros</li>
+                        <li><strong>Banreservas:</strong> Servicios básicos</li>
+                        <li><strong>Banco BDI:</strong> Productos para migrantes</li>
+                    </ul>
+                </div>
+                <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #4caf50;">
+                    <h4>💸 Remesadoras Oficiales</h4>
+                    <ul>
+                        <li><strong>Western Union:</strong> <a href="https://www.westernunion.com.do" target="_blank">westernunion.com.do</a></li>
+                        <li><strong>MoneyGram:</strong> Múltiples puntos</li>
+                        <li><strong>Quisqueya Envíos:</strong> Especializada en RD</li>
+                        <li><strong>Remesas Dominicanas:</strong> Local</li>
+                    </ul>
+                </div>
+                <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #ff9800;">
+                    <h4>📱 Billeteras Digitales</h4>
+                    <ul>
+                        <li><strong>Banco Popular App:</strong> Banca móvil</li>
+                        <li><strong>BHD León Móvil:</strong> Pagos y transferencias</li>
+                        <li><strong>AZUL Móvil:</strong> Recarga y servicios</li>
+                        <li><strong>Transferencias 24/7:</strong> Sistema nacional</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios de Traducción y Convalidación -->
+        <section style="margin: 3rem 0;">
+            <h2>📜 Traducción, Apostillas y Convalidación</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div style="background-color: #e3f2fd; padding: 1.5rem; border-radius: 8px;">
+                    <h4>🌐 Traductores Oficiales</h4>
+                    <p><strong>Colegio Dominicano de Traductores e Intérpretes (CDTI)</strong></p>
+                    <p>Teléfono: (809) 685-7539</p>
+                    <p>Lista de traductores certificados para documentos legales</p>
+                </div>
+                <div style="background-color: #fff3e0; padding: 1.5rem; border-radius: 8px;">
+                    <h4>📋 MESCYT - Convalidación de Títulos</h4>
+                    <p><strong>Ministerio de Educación Superior</strong></p>
+                    <p>Teléfono: (809) 731-1100</p>
+                    <p>Web: <a href="https://www.mescyt.gob.do" target="_blank">mescyt.gob.do</a></p>
+                    <p>Proceso de reconocimiento de títulos extranjeros</p>
+                </div>
+                <div style="background-color: #e8f5e8; padding: 1.5rem; border-radius: 8px;">
+                    <h4>⚖️ Procuraduría General - Legalización</h4>
+                    <p><strong>Autenticación de documentos</strong></p>
+                    <p>Teléfono: (809) 533-3522</p>
+                    <p>Web: <a href="https://pgr.gob.do" target="_blank">pgr.gob.do</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transporte y Movilidad -->
+        <section style="margin: 3rem 0;">
+            <h2>🚗 Transporte y Movilidad</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px;">
+                    <h4>🚕 Apps de Transporte</h4>
+                    <ul>
+                        <li><strong>Uber:</strong> Transporte seguro</li>
+                        <li><strong>Cabify:</strong> Alternativa confiable</li>
+                        <li><strong>OMSA:</strong> Transporte público oficial</li>
+                        <li><strong>Metro de Santo Domingo:</strong> Líneas 1 y 2</li>
+                    </ul>
+                </div>
+                <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px;">
+                    <h4>🚌 Transporte Interurbano</h4>
+                    <ul>
+                        <li><strong>Caribe Tours:</strong> Principales rutas</li>
+                        <li><strong>Metro Tours:</strong> Servicio ejecutivo</li>
+                        <li><strong>Expreso Bávaro:</strong> Santo Domingo-Punta Cana</li>
+                        <li><strong>Línea Cibao:</strong> Ruta norte</li>
+                    </ul>
+                </div>
+                <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px;">
+                    <h4>🚗 Licencias de Conducir</h4>
+                    <p><strong>INTRANT</strong></p>
+                    <p>Teléfono: (809) 563-5353</p>
+                    <p>Web: <a href="https://www.intrant.gob.do" target="_blank">intrant.gob.do</a></p>
+                    <p>Solicitud y renovación de licencias</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Directorios Especializados -->
         <section style="margin: 3rem 0;">
             <h2>📋 Directorios Especializados</h2>
@@ -315,6 +417,19 @@ echo "\n" . '</script>' . "\n";
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Enlaces Relacionados -->
+        <section class="related-links" style="margin: 3rem 0; background-color: #f8f9fa; padding: 2rem; border-radius: 8px;">
+            <h2>📚 Guías Relacionadas</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin: 1rem 0;"><a href="cubanos-en-rd-guia.php" style="font-size: 1.1rem;">→ Guía completa para cubanos en República Dominicana</a></li>
+                <li style="margin: 1rem 0;"><a href="regularizacion-rd.php" style="font-size: 1.1rem;">→ Proceso de regularización migratoria</a></li>
+                <li style="margin: 1rem 0;"><a href="trabajo-derechos-rd.php" style="font-size: 1.1rem;">→ Derechos laborales y búsqueda de empleo</a></li>
+                <li style="margin: 1rem 0;"><a href="tramites-frecuentes-rd.php" style="font-size: 1.1rem;">→ Trámites administrativos frecuentes</a></li>
+                <li style="margin: 1rem 0;"><a href="comunidades-apoyo-rd.php" style="font-size: 1.1rem;">→ Comunidades y redes de apoyo</a></li>
+                <li style="margin: 1rem 0;"><a href="errores-comunes-migrantes.php" style="font-size: 1.1rem;">→ Errores comunes que debes evitar</a></li>
+            </ul>
         </section>
 
         <!-- CTA Section -->
