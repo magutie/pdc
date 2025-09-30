@@ -185,6 +185,28 @@ function generateArticleSchema($title, $description, $author = "Fundación Patri
     return $articleSchema;
 }
 
+// Función para generar schema de BreadcrumbList
+function generateBreadcrumbSchema($items) {
+    global $site_config;
+
+    $breadcrumbSchema = [
+        "@context" => "https://schema.org",
+        "@type" => "BreadcrumbList",
+        "itemListElement" => []
+    ];
+
+    foreach ($items as $position => $item) {
+        $breadcrumbSchema["itemListElement"][] = [
+            "@type" => "ListItem",
+            "position" => $position + 1,
+            "name" => $item['name'],
+            "item" => $site_config['site_url'] . $item['url']
+        ];
+    }
+
+    return $breadcrumbSchema;
+}
+
 // Función para imprimir schemas
 function printSchemas($schemas) {
     foreach ($schemas as $schema) {
