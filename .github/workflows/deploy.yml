@@ -53,16 +53,24 @@ jobs:
               git clone --depth=1 -b "$BRANCH" "$REPO_URL" "$APP_DIR/repos/working"
             fi
 
+            # Actualizar el repositorio primero
+            cd "$APP_DIR/repos/working"
+            git fetch --all --prune
+            git checkout "$BRANCH"
+            git pull --ff-only
+
             # Copiar scripts del repo al servidor
             cp "$APP_DIR/repos/working/deploy.sh" "$APP_DIR/deploy.sh"
-            cp "$APP_DIR/repos/working/verify-paths.sh" "$APP_DIR/verify-paths.sh"
+            [ -f "$APP_DIR/repos/working/verify-paths.sh" ] && cp "$APP_DIR/repos/working/verify-paths.sh" "$APP_DIR/verify-paths.sh"
             chmod +x "$APP_DIR/deploy.sh"
-            chmod +x "$APP_DIR/verify-paths.sh"
+            [ -f "$APP_DIR/verify-paths.sh" ] && chmod +x "$APP_DIR/verify-paths.sh"
 
-            # Ejecutar diagnóstico primero
-            echo "=== DIAGNÓSTICO DE RUTAS ==="
-            bash "$APP_DIR/verify-paths.sh"
-            echo ""
+            # Ejecutar diagnóstico si existe
+            if [ -f "$APP_DIR/verify-paths.sh" ]; then
+              echo "=== DIAGNÓSTICO DE RUTAS ==="
+              bash "$APP_DIR/verify-paths.sh"
+              echo ""
+            fi
 
             # Ejecutar deploy
             echo "=== INICIANDO DEPLOY ==="
