@@ -342,26 +342,26 @@ echo "\n" . '</script>' . "\n";
                 <div style="background-color: #e8f5e8; padding: 1.5rem; border-radius: 8px;">
                     <h4>🏛️ Instituciones Gubernamentales</h4>
                     <ul>
-                        <li><strong>Dirección General de Migración:</strong> (809) 221-4300</li>
-                        <li><strong>Ministerio de Trabajo:</strong> (809) 535-4400</li>
-                        <li><strong>Registro Civil:</strong> (809) 535-4400</li>
-                        <li><strong>Defensoría del Pueblo:</strong> (809) 535-4400</li>
+                        <li><strong>Dirección General de Migración:</strong> (809) 508-2555</li>
+                        <li><strong>Ministerio de Trabajo:</strong> (809) 535-4404</li>
+                        <li><strong>Registro Civil (JCE):</strong> (809) 732-0133</li>
+                        <li><strong>Defensoría del Pueblo:</strong> (809) 381-4777</li>
                     </ul>
                 </div>
                 <div style="background-color: #e3f2fd; padding: 1.5rem; border-radius: 8px;">
                     <h4>🏥 Servicios de Salud</h4>
                     <ul>
-                        <li><strong>Hospital General:</strong> (809) 221-4300</li>
-                        <li><strong>Clínica Abreu:</strong> (809) 221-4300</li>
-                        <li><strong>Cruz Roja:</strong> (809) 221-4300</li>
+                        <li><strong>Cruz Roja Dominicana:</strong> (809) 682-4545</li>
+                        <li><strong>Emergencias:</strong> 911</li>
+                        <li><strong>Consulta guías específicas</strong> para más información</li>
                     </ul>
                 </div>
                 <div style="background-color: #fff3e0; padding: 1.5rem; border-radius: 8px;">
                     <h4>🎓 Educación</h4>
                     <ul>
-                        <li><strong>INFOTEP:</strong> (809) 221-4300</li>
-                        <li><strong>UASD:</strong> (809) 221-4300</li>
-                        <li><strong>Ministerio de Educación:</strong> (809) 221-4300</li>
+                        <li><strong>INFOTEP:</strong> (809) 566-4161</li>
+                        <li><strong>MINERD:</strong> (809) 688-9700</li>
+                        <li><strong>MESCyT:</strong> (809) 731-1100</li>
                     </ul>
                 </div>
             </div>

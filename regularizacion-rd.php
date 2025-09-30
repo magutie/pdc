@@ -167,8 +167,8 @@ echo "\n" . '</script>' . "\n";
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 1rem 0;">
                 <div style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
                     <h4>🏛️ Dirección General de Migración</h4>
-                    <p><strong>Dirección:</strong> Av. 30 de Marzo, Santo Domingo</p>
-                    <p><strong>Teléfono:</strong> (809) 221-4300</p>
+                    <p><strong>Dirección:</strong> Autopista 30 de Mayo Esq. Héroes de Luperón, Santo Domingo</p>
+                    <p><strong>Teléfono:</strong> (809) 508-2555</p>
                     <p><strong>Horario:</strong> Lunes a Viernes, 8:00 AM - 4:00 PM</p>
                 </div>
                 <div style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
@@ -213,18 +213,18 @@ echo "\n" . '</script>' . "\n";
                 <div style="background-color: #e3f2fd; padding: 1.5rem; border-radius: 8px;">
                     <h4>🏛️ Instituciones Oficiales</h4>
                     <ul>
-                        <li><strong>Dirección General de Migración:</strong> (809) 221-4300</li>
-                        <li><strong>Ministerio de Relaciones Exteriores:</strong> (809) 221-4300</li>
-                        <li><strong>Registro Civil:</strong> (809) 221-4300</li>
-                        <li><strong>Defensoría del Pueblo:</strong> (809) 221-4300</li>
+                        <li><strong>Dirección General de Migración:</strong> (809) 508-2555</li>
+                        <li><strong>Ministerio de Relaciones Exteriores:</strong> (809) 987-7000</li>
+                        <li><strong>Registro Civil (JCE):</strong> (809) 732-0133</li>
+                        <li><strong>Defensoría del Pueblo:</strong> (809) 381-4777</li>
                     </ul>
                 </div>
                 <div style="background-color: #f3e5f5; padding: 1.5rem; border-radius: 8px;">
                     <h4>🤝 Organizaciones de Apoyo</h4>
                     <ul>
                         <li><strong>Patriotas del Caribe:</strong> contacto@patriotasdelcaribe.com</li>
-                        <li><strong>ACNUR República Dominicana:</strong> (809) 221-4300</li>
-                        <li><strong>Organización Internacional para las Migraciones:</strong> (809) 221-4300</li>
+                        <li><strong>ACNUR República Dominicana:</strong> WhatsApp +1 (849) 451-1490 / domsasug@unhcr.org</li>
+                        <li><strong>Organización Internacional para las Migraciones (OIM):</strong> (809) 688-8174</li>
                     </ul>
                 </div>
             </div>

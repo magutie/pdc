@@ -80,8 +80,8 @@ echo "\n" . '</script>' . "\n";
                 <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; border-left: 4px solid #1976d2;">
                     <h3>📋 Dirección General de Migración</h3>
                     <p><strong>Función:</strong> Regularización migratoria, visas, residencias</p>
-                    <p><strong>Dirección:</strong> Av. 30 de Marzo, Santo Domingo</p>
-                    <p><strong>Teléfono:</strong> (809) 221-4300</p>
+                    <p><strong>Dirección:</strong> Autopista 30 de Mayo Esq. Héroes de Luperón, Santo Domingo</p>
+                    <p><strong>Teléfono:</strong> (809) 508-2555</p>
                     <p><strong>Sitio web:</strong> <a href="https://migracion.gob.do" target="_blank" rel="noopener">migracion.gob.do</a></p>
                     <div style="background-color: white; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
                         <h4>📝 Servicios Disponibles</h4>
@@ -97,9 +97,9 @@ echo "\n" . '</script>' . "\n";
                 <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; border-left: 4px solid #4caf50;">
                     <h3>⚖️ Defensoría del Pueblo</h3>
                     <p><strong>Función:</strong> Protección de derechos humanos</p>
-                    <p><strong>Dirección:</strong> Av. Jiménez Moya, Santo Domingo</p>
-                    <p><strong>Teléfono:</strong> (809) 535-4400</p>
-                    <p><strong>Sitio web:</strong> <a href="https://defensoria.gob.do" target="_blank" rel="noopener">defensoria.gob.do</a></p>
+                    <p><strong>Dirección:</strong> Ave. 27 de Febrero 526, Renacimiento, Santo Domingo</p>
+                    <p><strong>Teléfono:</strong> (809) 381-4777</p>
+                    <p><strong>Sitio web:</strong> <a href="https://defensordelpueblo.gob.do" target="_blank" rel="noopener">defensordelpueblo.gob.do</a></p>
                     <div style="background-color: white; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
                         <h4>🤝 Servicios Disponibles</h4>
                         <ul>
@@ -132,7 +132,7 @@ echo "\n" . '</script>' . "\n";
                     <h3>🏥 Ministerio de Salud Pública</h3>
                     <p><strong>Función:</strong> Servicios de salud pública</p>
                     <p><strong>Dirección:</strong> Av. San Cristóbal, Santo Domingo</p>
-                    <p><strong>Teléfono:</strong> (809) 221-4300</p>
+                    <p><strong>Teléfono:</strong> (809) 541-3121</p>
                     <p><strong>Sitio web:</strong> <a href="https://salud.gob.do" target="_blank" rel="noopener">salud.gob.do</a></p>
                     <div style="background-color: white; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
                         <h4>🏥 Servicios Disponibles</h4>
@@ -156,7 +156,8 @@ echo "\n" . '</script>' . "\n";
                     <h3>🤝 ACNUR - Alto Comisionado de las Naciones Unidas</h3>
                     <p><strong>Función:</strong> Protección de refugiados y desplazados</p>
                     <p><strong>Oficina RD:</strong> Santo Domingo</p>
-                    <p><strong>Teléfono:</strong> (809) 221-4300</p>
+                    <p><strong>WhatsApp:</strong> +1 (849) 451-1490</p>
+                    <p><strong>Email:</strong> domsasug@unhcr.org</p>
                     <p><strong>Sitio web:</strong> <a href="https://www.acnur.org" target="_blank" rel="noopener">acnur.org</a></p>
                     <div style="background-color: white; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
                         <h4>🛡️ Servicios Disponibles</h4>
@@ -172,8 +173,8 @@ echo "\n" . '</script>' . "\n";
                 <div style="background-color: #e8f5e8; padding: 2rem; border-radius: 8px; border-left: 4px solid #4caf50;">
                     <h3>🌐 OIM - Organización Internacional para las Migraciones</h3>
                     <p><strong>Función:</strong> Gestión de migración ordenada</p>
-                    <p><strong>Oficina RD:</strong> Santo Domingo</p>
-                    <p><strong>Teléfono:</strong> (809) 221-4300</p>
+                    <p><strong>Oficina RD:</strong> Calle Socorro Sánchez 152, Gazcue, Santo Domingo</p>
+                    <p><strong>Teléfono:</strong> (809) 688-8174</p>
                     <p><strong>Sitio web:</strong> <a href="https://www.iom.int" target="_blank" rel="noopener">iom.int</a></p>
                     <div style="background-color: white; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
                         <h4>📋 Servicios Disponibles</h4>
@@ -190,7 +191,7 @@ echo "\n" . '</script>' . "\n";
                     <h3>🏛️ Cruz Roja Dominicana</h3>
                     <p><strong>Función:</strong> Asistencia humanitaria</p>
                     <p><strong>Oficinas:</strong> Múltiples ubicaciones</p>
-                    <p><strong>Teléfono:</strong> (809) 221-4300</p>
+                    <p><strong>Teléfono:</strong> (809) 682-4545</p>
                     <p><strong>Sitio web:</strong> <a href="https://www.cruzroja.org.do" target="_blank" rel="noopener">cruzroja.org.do</a></p>
                     <div style="background-color: white; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
                         <h4>🚑 Servicios Disponibles</h4>
@@ -231,7 +232,7 @@ echo "\n" . '</script>' . "\n";
                     <h3>🏘️ Centro de Apoyo al Migrante</h3>
                     <p><strong>Función:</strong> Servicios integrales para migrantes</p>
                     <p><strong>Ubicación:</strong> Santiago de los Caballeros</p>
-                    <p><strong>Teléfono:</strong> (809) 221-4300</p>
+                    <p><strong>Contacto:</strong> Consultar directamente con la organización</p>
                     <p><strong>Servicios:</strong> Orientación legal y social</p>
                     <div style="background-color: white; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
                         <h4>📋 Servicios Disponibles</h4>

@@ -425,17 +425,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="org-card">
                     <h4>⚖️ Defensoría del Pueblo</h4>
-                    <p><strong>Teléfono:</strong> 809-686-0013</p>
+                    <p><strong>Teléfono:</strong> (809) 381-4777</p>
+                    <p><strong>Dirección:</strong> Ave. 27 de Febrero 526, Renacimiento, Santo Domingo</p>
                     <p><strong>Servicios:</strong> Protección de derechos fundamentales</p>
                 </div>
                 <div class="org-card">
                     <h4>🤝 Centro Bonó</h4>
-                    <p><strong>Teléfono:</strong> 809-687-3984</p>
+                    <p><strong>Teléfono:</strong> (809) 682-4448 / (809) 682-2121</p>
                     <p><strong>Servicios:</strong> Derechos humanos y migración</p>
                 </div>
                 <div class="org-card">
                     <h4>🏠 MUDHA</h4>
-                    <p><strong>Teléfono:</strong> 809-689-0013</p>
+                    <p><strong>Teléfono:</strong> (809) 688-7430</p>
                     <p><strong>Servicios:</strong> Derechos de migrantes y mujeres</p>
                 </div>
             </div>

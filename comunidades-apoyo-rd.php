@@ -147,7 +147,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h4>ACNUR - Alto Comisionado de las Naciones Unidas para los Refugiados</h4>
                 <p><strong>Servicios:</strong> Protección a refugiados y solicitantes de asilo</p>
                 <p><strong>Ubicación:</strong> Av. Lope de Vega #29, Santo Domingo</p>
-                <p><strong>Teléfono:</strong> 809-567-6139</p>
+                <p><strong>WhatsApp:</strong> +1 (849) 451-1490</p>
+                <p><strong>Email:</strong> domsasug@unhcr.org</p>
                 <p><strong>Web:</strong> <a href="https://www.acnur.org/republica-dominicana" target="_blank">www.acnur.org/republica-dominicana</a></p>
                 <p><strong>Nota:</strong> Atienden principalmente casos de refugio y asilo</p>
             </div>
@@ -155,8 +156,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="organization-card">
                 <h4>OIM - Organización Internacional para las Migraciones</h4>
                 <p><strong>Servicios:</strong> Asistencia a migrantes, retorno voluntario, integración</p>
-                <p><strong>Ubicación:</strong> C/ César Nicolás Penson #106, Santo Domingo</p>
-                <p><strong>Teléfono:</strong> 809-696-7215</p>
+                <p><strong>Ubicación:</strong> Calle Socorro Sánchez 152, Gazcue, Santo Domingo</p>
+                <p><strong>Teléfono:</strong> (809) 688-8174</p>
                 <p><strong>Web:</strong> <a href="https://www.iom.int/es/republica-dominicana" target="_blank">www.iom.int/es/republica-dominicana</a></p>
             </div>
 
@@ -171,8 +172,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="organization-card">
                 <h4>OBMICA - Observatorio Migrantes del Caribe</h4>
                 <p><strong>Servicios:</strong> Investigación, incidencia, capacitación en derechos de migrantes</p>
-                <p><strong>Ubicación:</strong> Santo Domingo</p>
-                <p><strong>Teléfono:</strong> 809-685-6200</p>
+                <p><strong>Ubicación:</strong> Calle Santiago #352, Gazcue, Santo Domingo</p>
+                <p><strong>Teléfono:</strong> (809) 221-6993</p>
+                <p><strong>Email:</strong> obmicard@gmail.com</p>
                 <p><strong>Web:</strong> <a href="http://obmica.org" target="_blank">obmica.org</a></p>
             </div>
 
@@ -205,8 +207,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h4>Cáritas Dominicana</h4>
                 <p><strong>Afiliación:</strong> Iglesia Católica</p>
                 <p><strong>Servicios:</strong> Asistencia humanitaria, alimentos, asesoría legal</p>
-                <p><strong>Ubicaciones:</strong> Múltiples sedes en todo el país</p>
-                <p><strong>Contacto:</strong> 809-688-9174</p>
+                <p><strong>Ubicación:</strong> Calle Coronel Rafael Fdez. Domínguez Esq. 51, Santo Domingo</p>
+                <p><strong>Teléfono:</strong> (809) 565-7746</p>
+                <p><strong>Email:</strong> directornacional@caritas.org.do</p>
                 <p><strong>Enfoque:</strong> Apoyo integral a personas vulnerables incluyendo migrantes</p>
             </div>
 
