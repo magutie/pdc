@@ -263,17 +263,6 @@ echo "\n" . '</script>' . "\n";
     </article>
 </main>
 
-<footer>
-    <div class="footer-links">
-        <a href="index.php">Inicio</a> |
-        <a href="cubanos-en-rd-guia.php">Guía Completa</a> |
-        <a href="regularizacion-rd.php">Regularización</a> |
-        <a href="faq.php">FAQ</a> |
-        <a href="plan_trabajo.php">Plan de Trabajo</a> |
-        <a href="privacidad.php">Privacidad</a> |
-        <a href="terminos.php">Términos</a>
-    </div>
-    <p>&copy; 2025 Patriotas del Caribe. Todos los derechos reservados.</p>
-</footer>
+<?php require_once "includes/footer-content.php"; ?>
 
 <?php include 'includes/footer.php'; ?>

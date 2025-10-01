@@ -68,9 +68,15 @@ body{
 }
 
 /* Tipografía mejorada */
-h1,h2,h3,h4{
+h2,h3,h4{
   font-family:var(--ff-serif);
   color:var(--clr-primary);
+  margin:0 0 var(--space-4);
+  line-height:1.2;
+}
+h1{
+  font-family:var(--ff-serif);
+  color:#ffffff;
   margin:0 0 var(--space-4);
   line-height:1.2;
 }
