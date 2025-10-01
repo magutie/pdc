@@ -315,26 +315,6 @@ echo "\n" . '</script>' . "\n";
             <p><a href="errores-comunes-migrantes.php" class="btn-primary">📖 Leer Guía Completa de Errores Comunes</a></p>
         </section>
 
-        <section id="testimonios-comunidad" style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
-            <h2>💬 Testimonios de nuestra comunidad</h2>
-            <p>Lee experiencias reales de migrantes cubanos que han encontrado éxito en República Dominicana con el apoyo de Patriotas del Caribe.</p>
-
-            <div style="background-color: white; padding: 1.5rem; border-radius: 6px; margin: 1rem 0; border-left: 4px solid #28a745;">
-                <blockquote style="font-style: italic; margin: 0;">
-                    "Patriotas del Caribe me ayudó a entender mis derechos como migrante en República Dominicana. Su orientación fue fundamental para regularizar mi situación migratoria."
-                </blockquote>
-                <footer style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
-                    - María Elena R., Santo Domingo
-                </footer>
-            </div>
-
-            <p style="text-align: center; margin-top: 1.5rem;">
-                <a href="/testimonios.php" class="btn-primary" style="background-color: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold;">
-                    📖 Leer todos los testimonios
-                </a>
-            </p>
-        </section>
-
         <section id="directorio-util">
             <h2>📞 8. Directorio Útil</h2>
             
