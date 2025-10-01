@@ -338,25 +338,63 @@ input.error, select.error {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* === FOOTER === */
+/* === FOOTER RESPONSIVE === */
 footer {
   background-color: #c62828;
   color: #ffffff;
-  padding: 1rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
-.footer-links {
-  margin-bottom: 0.5rem;
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
 }
-.footer-links a {
+
+.footer-nav a {
   color: #ffffff;
-  margin: 0 0.5rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
 }
-.footer-links a:hover {
-  text-decoration: underline;
-  color: #ffecec;
+
+.footer-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.footer-section {
+  margin: 1.5rem 0;
+}
+
+.footer-title {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.footer-guides {
+  margin-top: 0.5rem;
+}
+
+.footer-legal {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-copyright {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* === NAVBAR (refinada con backdrop-filter) === */
@@ -822,31 +860,31 @@ ins.adsbygoogle[data-ad-format="fluid"] {
     font-weight: bold;
   }
   
-  /* Footer - Compacto en móvil */
+  /* Footer - Responsive en móvil */
   footer {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
   }
 
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+  .footer-nav {
+    gap: 0.5rem 1rem;
+  }
+
+  .footer-nav a {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.625rem;
+  }
+
+  .footer-title {
+    font-size: 0.95rem;
     margin-bottom: 0.5rem;
   }
 
-  .footer-links a {
-    display: inline;
-    padding: 0.25rem;
-    font-size: 0.9rem;
-  }
-
   .footer-section {
-    margin-top: 0.5rem;
-    line-height: 1.4;
+    margin: 1rem 0;
   }
 
-  footer p {
-    margin: 0.5rem 0 0;
+  .footer-copyright {
+    margin-top: 1rem;
     font-size: 0.85rem;
   }
   
