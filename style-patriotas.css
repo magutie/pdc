@@ -683,3 +683,283 @@ ins.adsbygoogle[data-ad-format="fluid"] {
     margin: var(--space-4) auto;
   }
 }
+
+/* ================================================
+   MEDIA QUERIES - RESPONSIVE MOBILE
+   (Sin cambiar estilos visuales, solo adaptación)
+   ================================================ */
+
+/* === VIEWPORT PEQUEÑO (Mobile) === */
+@media (max-width: 768px) {
+  /* Header */
+  .header-container {
+    padding: 1rem;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  
+  .eslogan {
+    font-size: 0.9rem;
+  }
+  
+  /* Títulos */
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  h4 {
+    font-size: 1.1rem;
+  }
+  
+  /* Contenedores */
+  .info-proceso {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  
+  #formulario {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  
+  /* Navegación */
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav li {
+    width: 100%;
+  }
+  
+  nav a {
+    padding: 0.75rem;
+    text-align: center;
+    display: block;
+  }
+  
+  /* Historia/Heroes */
+  .historia-patriotas {
+    padding: 1rem;
+  }
+  
+  .heroe {
+    padding: 1rem;
+  }
+  
+  .heroe-img {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    margin: 1rem 0;
+  }
+  
+  /* Plan de trabajo */
+  .plan-trabajo {
+    padding: 1rem;
+  }
+  
+  .objetivo {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Valores */
+  .valores-container {
+    flex-direction: column;
+  }
+  
+  .valores-box {
+    margin-bottom: 1rem;
+  }
+  
+  /* Tablas */
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  table thead {
+    display: none;
+  }
+  
+  table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  table td {
+    display: block;
+    text-align: right;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer-links a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  /* Botones */
+  form button,
+  .btn,
+  .boton-whatsapp a,
+  .whatsapp-boton {
+    width: 100%;
+    padding: 0.75rem;
+  }
+  
+  /* Imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Redes sociales */
+  .redes-sociales {
+    gap: 1rem;
+  }
+}
+
+/* === VIEWPORT MUY PEQUEÑO (Phones) === */
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0.75rem;
+  }
+  
+  .logo-text {
+    font-size: 1.25rem;
+  }
+  
+  .eslogan {
+    font-size: 0.85rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  .info-proceso,
+  #formulario,
+  .heroe,
+  .objetivo {
+    padding: 0.75rem;
+    margin: 0.75rem auto;
+  }
+  
+  nav a {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* === TABLET (iPad, etc) === */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-container {
+    padding: 1.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.75rem;
+  }
+  
+  nav a {
+    padding: 0.85rem 1.25rem;
+  }
+  
+  .heroe-img {
+    max-width: 250px;
+  }
+}
+
+/* === DESKTOP GRANDE === */
+@media (min-width: 1200px) {
+  .container,
+  .info-proceso,
+  .historia-patriotas,
+  .plan-trabajo {
+    max-width: 1100px;
+  }
+}
+
+/* === ORIENTACIÓN === */
+@media (orientation: landscape) and (max-height: 500px) {
+  .header-container {
+    padding: 0.5rem 1rem;
+  }
+  
+  .logo-container {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo-text {
+    font-size: 1.25rem;
+  }
+}
+
+/* === ACCESIBILIDAD === */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* === TOUCH DEVICES === */
+@media (hover: none) and (pointer: coarse) {
+  /* Aumentar áreas táctiles */
+  nav a,
+  .footer-links a,
+  button,
+  .btn,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Eliminar hover effects en touch */
+  .heroe:hover,
+  .card:hover,
+  .red-social:hover {
+    transform: none;
+  }
+}
+
+/* === FIN RESPONSIVE === */
