@@ -394,7 +394,7 @@ footer {
 .footer-copyright {
   margin-top: 1.5rem;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
 }
 
 /* === NAVBAR (refinada con backdrop-filter) === */
