@@ -763,10 +763,14 @@ ins.adsbygoogle[data-ad-format="fluid"] {
   }
   
   .heroe-img {
-    width: 100%;
-    max-width: 100%;
+    width: 160px;
+    height: 160px;
+    max-width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
     float: none;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    display: block;
   }
   
   /* Plan de trabajo */
@@ -818,19 +822,32 @@ ins.adsbygoogle[data-ad-format="fluid"] {
     font-weight: bold;
   }
   
-  /* Footer */
+  /* Footer - Compacto en móvil */
   footer {
-    padding: 1.5rem 1rem;
+    padding: 1rem;
   }
-  
+
   .footer-links {
+    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
   }
-  
+
   .footer-links a {
-    display: block;
-    padding: 0.5rem;
+    display: inline;
+    padding: 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-section {
+    margin-top: 0.5rem;
+    line-height: 1.4;
+  }
+
+  footer p {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
   }
   
   /* Botones */
